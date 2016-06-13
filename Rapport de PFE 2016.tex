@@ -1,0 +1,88 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks,linkcolor={blue!30!black},
+                       citecolor={blue!50!black},
+                        urlcolor={blue!80!black}]{hyperref}
+\usepackage{amsmath,siunitx,array,url} % Symboles, etc
+\usepackage{caption,subcaption,wrapfig,rotating,pdfpages} % Mise en page
+\usepackage{epic,eepic,graphicx,tikz} % Drawings
+\usepackage[top=2cm,left=2.5cm,right=2.5cm,bottom=2cm]{geometry} % Géométrie de la page, modifier selon le besoin
+\usepackage[babel=true,kerning=true]{microtype}
+
+\addto{\captionsfrench}{\renewcommand{\abstractname}{Introduction}}
+\pdfsuppresswarningpagegroup=1
+\date{}
+\title{Rapport de Projet de Fin d'Études}
+\author{Félix Piédallu}
+
+
+\begin{document}
+\nocite{*}
+\input{0.Couverture}
+
+% Remerciements
+%\input{0.Remerciements}
+
+\chapter*{Nano-Optique et Forces}
+L'équipe NOF fait partie de l'institut Néel, blablabla.
+% , le laboratoire de l'ENS Ulm spécialisé dans la physique de la matière condensée et la physique mésoscopique.
+
+% Elle regroupe autour de Takis Kontos et Audrey Cottet plusieurs doctorants : Matthieu Baillergeau, Matthieu Desjardins, Matthieu Dartiailh et Laure Bruhat, avec qui j'ai essentiellement travaillé durant mon stage.\newline
+%
+% L'équipe se concentre sur l'utilisation des nanotubes de carbone, en tant que double puits quantique ou qu'atome macroscopique (atome artificiel).
+%
+% Le nanotube de carbone est placé dans une cavité résonnante dont on fait varier les paramètres, et donc la fréquence de résonnance. Les sujets de recherche sont donc essentiellement concertés autour de la spintronique et du transport quantique dans de tels milieux.
+%
+% L'équipe met donc en place le modèle théorique d'une part, et s'occupe de la fabrication des échantillons et de la mise en place de l'expérience.\newline
+%
+% Le laboratoire est équipé d'un cryostat à Hélium3 (Oxford Heliox VL), d'un cryostat à dilution (Kelvinox Oxford MX250) et d'un cryostat à dilution sèche (Cryoconcept Cryofree), sur lequel j'ai travaillé dans le cadre de mon stage.
+
+
+
+
+
+\chapter*{Introduction} % Contexte du stage
+    \section{Les pinces optiques}
+
+    \section{État de l'art (Utilisation des pinces optiques)}
+%\input{0.Introduction}
+
+\chapter{L'expérience}
+\input{Experience}
+
+\chapter{Les mesures et résultats}
+\input{Mesures}
+
+\chapter*{Bilan}
+\addcontentsline{toc}{chapter}{Bilan}
+%\input{}
+
+
+
+\bibliographystyle{unsrt}
+\bibliography{bibliographie}
+\newpage
+\appendix
+\phantomsection
+\addcontentsline{toc}{part}{Annexes}
+
+\vspace*{8cm}
+\begin{center}
+\rule{\linewidth}{0.5mm}\\[0.7cm]
+{\huge{\bfseries Annexes}}\\[0.4cm]
+\rule{\linewidth}{0.5mm}\\[0.5cm]
+
+
+\end{center}
+%\newpage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Guide de câblage du cryostat}
+%\includepdf[pages={-}]{../guide.pdf}
+
+\newpage
+%\input{9.Abstract}
+
+\end{document}
