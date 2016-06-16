@@ -1,0 +1,451 @@
+Nous allons détailler dans ce chapitre les différentes méthodes de caractérisation des pointes, afin de mettre en valeur les propriétés des différentes pointes qui ont été étudiées.
+
+Dans un premier temps nous allons observer l'émission des pointes en fonction de la polarisation de la lumière injectée dans la fibre. \par
+
+Ensuite, nous allons mesurer l'évolution de la transmission des pointes en fonction de la distance entre la pointe émettrice et la pointe de mesure. Ceci nous permettra de comprendre la structure du spot émis, et d'en conclure sur leur utilisabilité dans le cadre des nano-pinces optiques. \par
+
+Enfin, nous allons étudier le spectre de transmission d'une telle pince, afin de mettre en valeur la transmission des différents éléments de la pince optique.
+
+\section{Variation de la polarisation de la lumière incidente}
+Il avait été vu dans de précédentes études que la transmission des pointes métallisées dépendait fortement de la polarisation de la lumière incidente \cite{Decombe}. Notamment, cette dépendance doit se retrouver essentiellement pour des apex elliptiques.
+Les modélisations qui avaient été effectuées peuvent être retrouvées dans la figure \ref{theorie_polar_metal}.
+\begin{figure}[h]\centering
+    \includegraphics[width=0.15\textwidth]{{"Images_pasmoi/Polar_0"}.png}\hspace*{5mm}
+    \includegraphics[width=0.15\textwidth]{{"Images_pasmoi/Polar_32"}.png}\hspace*{5mm}
+    \includegraphics[width=0.15\textwidth]{{"Images_pasmoi/Polar_90"}.png}
+    \caption{Intensité calculée avec trois polarisations incidentes caractéristiques \cite{Decombe}}
+    \label{theorie_polar_metal}
+\end{figure}
+
+\subsection{Pointes sans métal}
+Nous avons d'abord décidé de vérifier que les pointes non métallisées n'ont pas de dépendance en polarisation.
+
+La figure \ref{var_lambda_nues} présente les profils d'émission d'une pointe non métallisée à deux polarisations incidentes orthogonales. On constate facilement que la polarisation de la lumière incidente n'a pas d'impact sur l'émission: seule une petite variation d'intensité traduit les irrégularités des pointes utilisées.
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=.5\textwidth]{Images/Photos_Fibres/Camera/Pointes_nues_air_crop.png}
+        \caption{Deux pointes non métallisées}
+        \label{pointes_nues_photo}
+    \end{center}
+\end{figure}
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.15\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Nues_2/0deg"}.png}
+        \caption{$\lambda$ = 0\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.15\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Nues_2/45deg"}.png}
+        \caption{$\lambda$ = 90\si{\degree}}
+    \end{subfigure}
+    \caption{Influence de la polarisation sur la transmission de pointes non métallisées}
+    \label{var_lambda_nues}
+\end{figure}
+
+Ce résultat nous permet notamment de nous assurer de la validité des prochaines mesures: (TODO trouver une formulation)
+
+\subsection{Pointes métallisées}
+Nous avons donc ensuite observé l'effet de la polarisation de la lumière incidente sur l'émission d'une pointe métallisée. Nous avons utilisé une fibre non métallisée pour mesurer le profil d'émission d'une pointe métallisée, afin de ne mesurer qu'un effet dû à cette pointe métallisée.
+
+La figure \ref{var_lambda_metal} présente les résultats obtenus avec une pointe très allongée (fig. \ref{pointe_metal_var_lambda}), dans l'air, avec une distance entre les pointes de l'ordre du micron.
+
+\begin{figure}[h]\centering
+    \includegraphics[width=0.2\textwidth]{{"Images/Photos_Fibres/l40fm3_dims_crop_2"}.png}
+    \caption{Pointe allongée (excentricité $= 0,98$)}\vspace*{5mm}
+    \label{pointe_metal_var_lambda}
+
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/32d"}.png}
+        \caption*{$\lambda$ = 0\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/47d"}.png}
+        \caption*{$\lambda$ = 30\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/62d"}.png}
+        \caption*{$\lambda$ = 60\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/77d_2"}.png}
+        \caption*{$\lambda$ = 90\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/92d"}.png}
+        \caption*{$\lambda$ = 120\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/107d"}.png}
+        \caption*{$\lambda$ = 150\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/122d_3"}.png}
+        \caption*{$\lambda$ = 180\si{\degree}}
+    \end{subfigure}
+    \caption{Profils d'émission en fonction de la polarisation incidente}
+    \label{var_lambda_metal}
+\end{figure}
+
+On peut tout d'abord noter que les spots semblent beaucoup plus larges ($\sim 4\mu m$) que l'apex de la pointe métallisée, qui est de l'ordre de 200nm. Nous mesurons en effet, comme nous l'avons vu dans la première partie (TODO), la convolution entre la fibre émettrice et réceptrice ; La fibre réceptrice, non métallisée, a une grande ouverture optique, ce qui donne de telles mesures.
+
+Enfin, on remarque bien une dépendance en polarisation telle qu'on l'attendait: pour $\lambda = 0\si{\degree}$, il apparaît deux spots assez éloignés, la lumière incidente est alors polarisée selon le petit axe de la pointe métallisée ; tandis que pour  $\lambda = 90\si{\degree}$, on ne peut distinguer qu'un seul lobe: on ne distingue pas les deux spots prévus par la simulation.
+
+Ces mesures nous permettent notamment de conclure que le grand axe de notre pointe métallisée est orienté horizontalement selon les profils d'émission.
+
+%TODO mettre ça dans la première partie %De telles mesures ont donc été effectuées, en faisant varier la polarisation injectée grâce à un polariseur (qui permet de filtrer une seule polarisation) et une lame $\lambda/2$ (qui permet de faire varier cette polarisation).
+
+%TODO: utiliser 2 pointes applaties ? Déjà fait, p. 30… Pas très concluant.
+%On peut alors observer dans les figures \ref{var_lambda_200nm} et \ref{var_lambda_3um} les spectres selon la polarisation. La pointe métalisée est relativement ronde, ce qui se traduit par une assez faible dépendance en polarisation. On observe tout de fois un déplacement du spot principal d'émission entre $\lambda/2 = 0^o$ et $\lambda/2 = 45^o$.
+% \begin{figure}\centering
+%         \includegraphics[width=0.3\textwidth]{{"Images/Photos_Fibres/l27fm5_ronde"}.png}
+%         \caption{Pointe métallisée presque circulaire (peu de dépendance en polarisation)}
+%         \label{l27fm5_photo}
+% \end{figure}
+
+
+
+\subsection{Pointes de Bessel}
+Nous avons effectué les mêmes mesures avec une pointe de Bessel. Nous attendons le même résultat que pour les fibres non métallisées: pas, ou très peu, de dépendance en polarisation incidente.
+
+TODO rapide explication théorique ?
+
+Nous avons alors utilisé une fibre non métallisée pour étudier l'émission, dans l'air, d'une pointe de Bessel. On constate bien sur la figure \ref{var_lambda_bessel} que la polarisation n'a pas d'incidence sur l'émission mesurée, cela confirme nos attentes.
+
+\begin{figure}[h]\centering
+    \includegraphics[width=0.4\textwidth]{{"Images/Photos_Fibres/Camera/Bessel_1"}.png}
+    \caption{Photo au microscope d'une pointe de Bessel}\vspace*{5mm}
+    \label{pointe_bessel_var_lambda}
+
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/0d"}.png}
+        \caption*{$\lambda$ = 0\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/15d"}.png}
+        \caption*{$\lambda$ = 30\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/30d"}.png}
+        \caption*{$\lambda$ = 60\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/45d"}.png}
+        \caption*{$\lambda$ = 90\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/60d"}.png}
+        \caption*{$\lambda$ = 120\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/75d"}.png}
+        \caption*{$\lambda$ = 150\si{\degree}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/90d"}.png}
+        \caption*{$\lambda$ = 180\si{\degree}}
+    \end{subfigure}
+    \caption{Profils d'émission en fonction de la polarisation incidente}
+    \label{var_lambda_bessel}
+\end{figure}
+
+
+\section{Variation de la distance}
+Une caractéristique importante des pointes est l'évolution du spot d'émission en fonction de la distance. En effet, cela détermine directement les performance du piégeage optique en fonction de la distance entre les pointes qui forment la pince optique.
+
+Pour cela, nous mesurons les profils d'émission des pointes, en éloignant la pointe de mesure de la pointe émettrice. Nous obtenons alors des spots gaussiens, dont la largeur évolue en fonction de la distance.
+
+Dans un premier temps, nous avons caractérisé les pointes dans l'air, puis dans l'eau afin de se rapprocher des conditions expérimentales des pinces optiques.
+
+\subsection{Pointes sans métal}
+On peut facilement reconnaître des fibres de bonne et mauvaise qualité: une pointe correcte présente un spot d'émission gaussien, quelle que soit la distance de mesure. La figure \ref{fibre_ok_scan} présente des exemples de scans caractéristiques.
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Vrac/Nue_OK_1"}.png}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Vrac/Nue_Pasok"}.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Exemples de profils de transmission caractéristiques pour une bonne (a) et une mauvaise (b) pointes}
+    \label{fibre_ok_scan}
+\end{figure}
+
+
+\begin{figure}[h]\centering
+TODO inclure des scans + une courbe d'évolution dans l'air et dans l'eau
+    \caption{Profils d'émission dans l'air (-) et dans l'eau (-) et évolution du waist avec la distance ()}
+    \label{nues_distance}
+\end{figure}
+
+La largeur des spots évolue linéairement avec la distance dans l'air et dans l'eau, avec une largeur au contact autour de $nm$ dans les deux milieux.
+On obtient l'angle d'émission de la pointe à partir de la pente du waist: 
+\[
+    \theta_{\text{émission}} = \arctan(\text{pente})
+\]
+Et l'ouverture numérique de la pointe est obtenue par:
+\[
+    N.A = n\sin(\frac{\theta}{2})
+\]
+
+Dans l'air, on trouve un angle d'émission de $18\si{\degree}$, qui donne une ouverture numérique de 0,16.
+
+Dans l'eau, le saut d'indice entre la fibre (n=1,45) et l'eau (1,33) beaucoup étant moins important qu'avec l'air (n=1), le faisceau diverge beaucoup moins: on obtient un angle d'émission de $8\si{\degree}$ et une ouverture numérique de 0,09.
+
+Enfin, l'amplitude de l'intensité lumineuse transmise évolue selon $\dfrac{1}{\sqrt{\text{distance}}}$: en effet le flux total transmis entre les deux pointes reste constant tandis que la surface de transmission évolue quadratiquement.
+
+Cette intensité est trois fois plus importante dans l'eau que dans l'air: cela implique un facteur $\sqrt{3}$ en puissance.
+
+
+\subsection{Pointes métalliques}
+Nous avons alors fait la même étude pour des pointes métalliques. Ici nous avons pris une pointe la plus circulaire possible, pour limiter l'impact de la polarisation incidente sur l'émission.
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.1"}.png}
+        \caption*{100nm}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.2"}.png}
+        \caption*{200nm}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.3"}.png}
+        \caption*{300nm}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.4"}.png}
+        \caption*{400nm}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.5"}.png}
+        \caption*{500nm}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=1"}.png}
+        \caption*{1$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=2"}.png}
+        \caption*{2$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=3"}.png}
+        \caption*{3$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=4"}.png}
+        \caption*{4$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=5"}.png}
+        \caption*{5$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=6"}.png}
+        \caption*{6$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=7"}.png}
+        \caption*{7$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=8"}.png}
+        \caption*{8$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=9"}.png}
+        \caption*{9$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=10"}.png}
+        \caption*{10$\mu$m}
+    \end{subfigure}
+    \caption{Émission d'une pointe métallique en fonction de la distance entre les pointes}
+    \label{emission_metal_distance}
+\end{figure}
+
+
+\subsection{Pointes de Bessel}
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=4.9"}.png}
+        \caption*{d=4.9$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=20.1"}.png}
+        \caption*{d=20$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=34.6"}.png}
+        \caption*{d=35$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=62"}.png}
+        \caption*{d=62$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=75"}.png}
+        \caption*{d=75$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=88"}.png}
+        \caption*{d=88$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=101"}.png}
+        \caption*{d=101$\mu$m}
+    \end{subfigure}\\
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=114"}.png}
+        \caption*{d=114$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=126"}.png}
+        \caption*{d=126$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=139"}.png}
+        \caption*{d=139$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=150"}.png}
+        \caption*{d=150$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=173"}.png}
+        \caption*{d=173$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=197"}.png}
+        \caption*{d=197$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=221"}.png}
+        \caption*{d=221$\mu$m}
+    \end{subfigure}
+    \caption{Variation de l'émission d'une pointe de Bessel en fonction de la distance (TODO faire un choix dans les images)}
+    \label{var_distance_bessel}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{{"Images/Bessel/VarDistance/waist2"}.png}
+        \caption{Évolution de la largeur du spot d'émission d'une pointe de Bessel}
+        \label{var_distance_bessel_courbe}
+    \end{center}
+\end{figure}
+
+\subsection{Franges d'émission des pointes de Bessel}
+Dummy text
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=5"}.png}
+        \caption*{5$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=6"}.png}
+        \caption*{6$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=7"}.png}
+        \caption*{7$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=8"}.png}
+        \caption*{8$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=9"}.png}
+        \caption*{9$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=10"}.png}
+        \caption*{10$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=12"}.png}
+        \caption*{12$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=14"}.png}
+        \caption*{14$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=16"}.png}
+        \caption*{16$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=18"}.png}
+        \caption*{18$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=20"}.png}
+        \caption*{20$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=25"}.png}
+        \caption*{25$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=30"}.png}
+        \caption*{30$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=35"}.png}
+        \caption*{35$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=40"}.png}
+        \caption*{40$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=45"}.png}
+        \caption*{45$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=50"}.png}
+        \caption*{50$\mu$m}
+    \end{subfigure}
+    \caption{Franges de Bessel en fonction de la distance (TODO faire un choix dans les images)}
+    \label{franges_bessel}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{{"Images/Bessel/Franges/Franges"}.png}
+        \caption{Rayon des franges de Bessel en fonction de la distance}
+        \label{franges_bessel_courbe}
+    \end{center}
+\end{figure}
+
+
+
+
+
+\section{Transmission en spectre}
+\subsection{Normalisation}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/NormalisationIntensite"}.png}
+        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/NormalisationTransmission"}.png}
+        \caption{Courbes de normalisation en intensité et en transmission}
+    \end{center}
+        \label{normalisation_transmission}
+\end{figure}
+
+\subsection{Comparaison des fibres}
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/FibresNues"}.png}\\
+        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/FibresMetal"}.png}
+        \caption{Transmission des pointes nues et métallisées, dans l'eau et dans l'air}
+    \end{center}
+        \label{pointes_transmission}
+\end{figure}
+
+
+
+Dummy text

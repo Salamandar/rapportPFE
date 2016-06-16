@@ -1,0 +1,59 @@
+
+\section{La mise en place de l'expérience}
+\subsection{Dérive des moteurs Mechonics}
+Utilisation de deux fibres métallisées (Spot plus petit = meilleure précision).
+
+On peut remarquer dans la figure \ref{mechonics_avant} que la fibre fixée sur les Mechonics se déplace jusqu'à 500 nm/minute. Cette dérive suit une loi exponentielle, on a alors supposé une relâche mécanique des supports, ou bien électrique au niveau du contrôleur: une mauvaise mise à la masse des moteurs pourrait entraîner une telle dérive.
+
+Après mise à la masse des connecteurs des Mechonics, cette vitesse est tombée à 23 nm/minute selon Y et même 3nm/minute selon Z, comme on peut le voir sur la courbe \ref{mechonics_apres}.
+\par
+
+
+\begin{figure}[h] \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Derive_Mecho/Avant"}.png}
+        \caption{Avant mise à la masse}
+        \label{mechonics_avant}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Derive_Mecho/Apres"}.png}
+        \caption{Après mise à la masse}
+        \label{mechonics_apres}
+    \end{subfigure}
+    \caption{Déplacement des Mechonics avant mise à la masse}
+\end{figure}
+
+
+\section{Les appareils de mesure}
+\section{L'élaboration des pointes \& des pointes métallisées}
+
+\subsection{Images FIB}
+L'excentricité de l'apex d'une pointe de petit axe $a$ et grand axe $b$ est définie par 
+\[e=\frac{\sqrt{a^2-b^2}}{a}\]
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.35\textwidth}\label{l27fm5_meb}
+        \includegraphics[width=\textwidth]{{"Images/Photos_Fibres/l27fm5_ronde_crop"}.png}
+        \caption*{Apex circulaire ($e = 0,28$)}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.35\textwidth}\label{l40fm3_meb}
+        \includegraphics[width=\textwidth]{{"Images/Photos_Fibres/l40fm3_dims_crop"}.png}
+        \caption*{Apex allongé ($e = 0,98$)}
+    \end{subfigure}
+    \caption{Clichés MEB de pointes coupées au FIB}
+    \label{fib_ronde_allongee}
+\end{figure}
+
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.25\textwidth}\label{l33fm2_meb_avant}
+        \includegraphics[width=\textwidth]{{"Images/Photos_Fibres/l33fm2_avant_crop"}.jpg}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.25\textwidth}\label{l33fm2_meb}
+        \includegraphics[width=\textwidth]{{"Images/Photos_Fibres/l33fm2_apres_crop"}.jpg}
+    \end{subfigure}
+    \caption{Pointe métallisée avant et après découpe au FIB}
+    \label{fib_avant_apres}
+\end{figure}
+
+\section{Couplage dans la fibre multimode}
+Dummy text
