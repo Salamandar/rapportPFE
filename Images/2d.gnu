@@ -18,15 +18,24 @@ set decimalsign locale; set decimalsign ','
 # Bessel/VarDistance
 #set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 18,2
 #set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 12,6 "4 µm"
+# Bessel/VarLambda
+#set arrow nohead lw 6                   lc rgb "#ffffff" front from 3,2 to 10.3,2
+#set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 6.5,4 "5 µm"
 # Metal/1
 #set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 18,2
 #set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 12,6 "2 µm"
 # Var_Lambda/1
-set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 13,2
-set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 10,6 "1 µm"
+#set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 13,2
+#set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 10,6 "1 µm"
 # Var_Lambda/Nues_2
-set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 13,2
-set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 10,6 "5 µm"
+#set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 13,2
+#set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 10,6 "5 µm"
+# Var_Lambda/Metal_2
+#set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 15,2
+#set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 10,6 "5 µm"
+# Vrac
+set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 15,2
+set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 10,6 "1 µm"
 
 
 
