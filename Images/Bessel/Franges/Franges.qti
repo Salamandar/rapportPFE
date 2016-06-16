@@ -1,0 +1,164 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	Python
+<windows>	2
+<table>
+Table1	30	2	07/06/16 14:06
+geometry	0	0	470	814	
+header	Distance (µm)[X]	Rayon de la frange (µm)[Y]
+ColWidth	100	135	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+0	5	15.1
+1	6	15.3
+2	7	15.58
+3	8	15.53
+4	9	15.92
+5	10	15.89
+6	12	16.2399
+7	14	16.55
+8	16	16.85
+9	18	17.28
+10	20	17.5656
+11	25	18.1
+12	30	18.82
+13	35	19.5542
+14	40	20.5484
+15	45	21.507
+16	50	
+</data>
+</table>
+<multiLayer>
+Graphe1	1	1	07/06/16 14:09
+geometry	555	24	900	500	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	730	400
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	4	882	439
+<PageGeometry>0.00560538	0.00884956	0.988789	0.971239</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>1</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	1
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Cantarell	14	75	0	0	0
+ScaleFont0	Cantarell	14	75	0	0	0
+ScaleFont1	Cantarell	14	75	0	0	0
+ScaleFont2	Cantarell	14	75	0	0	0
+ScaleFont3	Cantarell	14	75	0	0	0
+AxisFont0	Cantarell	14	50	0	0	0
+AxisFont1	Cantarell	14	50	0	0	0
+AxisFont2	Cantarell	14	50	0	0	0
+AxisFont3	Cantarell	14	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#333333	#333333	#333333	#333333
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_Distance (µm)	Table1_Rayon de la frange (µm)	1	0	#000000	0	2	7	1	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement1</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>5	45</Range>
+<Points>100</Points>
+<Constant>A	0.153103371151844</Constant>
+<Constant>B	14.400255540939</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	14	22	0	9	5	0	0
+scale	1	14	22	0	9	5	0	0
+scale	2	5	45.1	0	5	5	0	0
+scale	3	5	45.1	0	5	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>7.03125</x>
+<y>21.482352941176</y>
+<right>23.9583333333333</right>
+<bottom>20.0470588235294</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)Rayon de la 3e frange
+\l(2)Fit Linéaire (0,15x + 14,41 µm)
+</Text>
+<Font>Cantarell	14	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[07/06/16 14:17	Graphe: ''Graphe1'']
+Ajustement non-linéaire de données: Table1_Rayon de la frange (µm), utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 5,0000000000000e+00 à x  = 4,5000000000000e+01
+A = 1,5310337115184e-01 +/- 2,4826873696565e-03
+B = 1,4400255540939e+01 +/- 5,5687790061967e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,4947061201141e-02
+R^2 = 0,9963321905856
+Coefficient R^2 ajusté = 0,9957679122141
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,1222581743735
+RSS (Restes de la somme des carrés) = 0,209258856816
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+</log>

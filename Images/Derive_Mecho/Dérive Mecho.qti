@@ -1,0 +1,589 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	Python
+<windows>	5
+<table>
+Derive_Mecho	13	6	07/06/16 10:53
+geometry	0	891	-1	-1	minimized	
+header	Heure[X]	Temps (minutes)[X]	Position y[Y]	Déplacement Y[Y]	Position Z[Y]	Déplacement Z[Y]
+ColWidth	72	126	89	116	90	116	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0	0
+HiddenColumn	0	0	0	0	0	0
+Comments							
+WindowLabel	/home/salamandar/PFE/Rapport de PFE/Images/Derive_Mecho/Derive_Mecho.csv	2
+<data>
+0	0	0	27.45	0	25.37	0
+1	0	2	28.4	0.95	26.1	0.73
+2	0	4.5	29.4	1.95	27	1.63
+3	0	6.5	29.9	2.45	27.26	1.89
+4	0	8.5	31.1	3.65	28	2.63
+5	0	11	31.75	4.3	28.42	3.05
+6	0	13	32.7	5.25	28.8	3.43
+7	0	15.5	33.75	6.3	29.2	3.83
+8	0	21	35.5	8.05	30	4.63
+9	0	23.5	36.1	8.65	30.2	4.83
+10	0	25	36.8	9.35	30.4	5.03
+11	0	27	37.5	10.05	30.6	5.23
+12	0	29	38	10.55	30.8	5.43
+</data>
+</table>
+<table>
+Table1	6	6	07/06/16 10:53
+geometry	0	374	662	218	
+header	Heure[X]	Temps (minutes)[X]	Position Y[Y]	Dépcalement Y[Y]	Position Z[Y]	Déplacement Z[Y]
+ColWidth	72	126	90	116	90	116	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0	0
+HiddenColumn	0	0	0	0	0	0
+Comments							
+WindowLabel		2
+<data>
+0	0	0	24.457	0	26.319	0
+1	0	0	24.445	-0.012	26.492	0.173
+2	0	0	24.349	-0.108	26.467	0.148
+3	0	0	24.299	-0.158	26.345	0.026
+4	0	0	24.169	-0.288	26.345	0.026
+5	0	0	23.992	-0.465	26.299	-0.02
+</data>
+</table>
+<table>
+Table2	10	6	07/06/16 10:53
+geometry	-1	31	661	291	
+header	Heure[X]	Temps (minutes)[X]	Position Y[Y]	Déplacement Y[Y]	Position Z[Y]	Déplacement Z[Y]
+ColWidth	100	100	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0	0
+HiddenColumn	0	0	0	0	0	0
+Comments							
+WindowLabel		2
+<data>
+0	0	0	28.153	0	25.736	0
+1	0	1.8333333333	28.218	0.065	25.729	-0.007
+2	0	4.45	28.277	0.124	25.716	-0.02
+3	0	6.6166666667	28.417	0.264	25.765	0.029
+4	0	9.3833333333	28.468	0.315	25.781	0.045
+5	0	12.0833333333	28.572	0.419	25.784	0.048
+6	0	43.8166666667	29.212	1.059	25.876	0.14
+7	0	49.6666666667	29.183	1.03	25.867	0.131
+8	0	56.1166666667	29.371	1.218	25.901	0.165
+9	0	65.5	29.67	1.517	25.963	0.227
+</data>
+</table>
+<multiLayer>
+Graphe1	1	1	07/06/16 11:00
+geometry	662	0	900	500	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	730	400
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	881	438
+<PageGeometry>0.00560538	0.0110619	0.987668	0.969027</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>1</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	1
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	Déplacement (µm)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	5124	4	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Cantarell	10	75	0	0	0
+ScaleFont0	Cantarell	15	75	0	0	0
+ScaleFont1	Cantarell	8	75	0	0	0
+ScaleFont2	Cantarell	15	75	0	0	0
+ScaleFont3	Cantarell	8	75	0	0	0
+AxisFont0	Cantarell	15	50	0	0	0
+AxisFont1	Cantarell	8	50	0	0	0
+AxisFont2	Cantarell	15	50	0	0	0
+AxisFont3	Cantarell	8	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#333333	#333333	#333333	#333333
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Derive_Mecho_Temps (minutes)	Derive_Mecho_Déplacement Y	1	0	#000000	0	3.3	7	1	#000000	#000000	0	#000000	14	1	2	0	0	12	1
+curve	Derive_Mecho_Temps (minutes)	Derive_Mecho_Déplacement Z	1	0	#ff0000	0	1	7	1	#ff0000	#ff0000	0	#000000	14	1	2	0	0	12	1
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement3</Title>
+<Expression>y0+A*exp(-x/t)</Expression>
+<Variable>x</Variable>
+<Range>0	29</Range>
+<Points>100</Points>
+<Constant>A	-35.698189176625</Constant>
+<Constant>t	82.673120239953</Constant>
+<Constant>y0	35.710507641482</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement4</Title>
+<Expression>y0+A*exp(-x/t)</Expression>
+<Variable>x</Variable>
+<Range>0	29</Range>
+<Points>100</Points>
+<Constant>A	-6.75977601223299</Constant>
+<Constant>t	18.5895137534778</Constant>
+<Constant>y0	6.80110839377931</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0	12	0	7	5	0	0
+scale	1	0	12	0	7	5	0	0
+scale	2	0	30	0	7	5	0	0
+scale	3	0	30	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.40690505548705</x>
+<y>11.43956043956</y>
+<right>12.7250308261406</right>
+<bottom>7.51648351648352</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)Déplacement en Y
+\l(2)Déplacement en Z
+
+</Text>
+<Font>Cantarell	15	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graphe2	1	1	07/06/16 11:27
+geometry	661	220	900	500	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	730	400
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	4	882	439
+<PageGeometry>0.00560538	0.00884956	0.988789	0.971239</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>1</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	1
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	Déplacement (µm)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	0	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Cantarell	14	75	0	0	0
+ScaleFont0	Cantarell	14	75	0	0	0
+ScaleFont1	Cantarell	14	75	0	0	0
+ScaleFont2	Cantarell	14	75	0	0	0
+ScaleFont3	Cantarell	14	75	0	0	0
+AxisFont0	Cantarell	14	50	0	0	0
+AxisFont1	Cantarell	14	50	0	0	0
+AxisFont2	Cantarell	14	50	0	0	0
+AxisFont3	Cantarell	14	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#333333	#333333	#333333	#333333
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table2_Temps (minutes)	Table2_Déplacement Y	1	0	#000000	0	2	7	1	#000000	#000000	0	#000000	14	1	2	0	0	9	1
+curve	Table2_Temps (minutes)	Table2_Déplacement Z	1	0	#ff0000	0	2	7	2	#ff0000	#ff0000	0	#000000	14	1	2	0	0	9	1
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement5</Title>
+<Expression>A*exp(-x/t)-A</Expression>
+<Variable>x</Variable>
+<Range>0	65.5</Range>
+<Points>100</Points>
+<Constant>A	-2.54093024329841</Constant>
+<Constant>t	81.5072651882836</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement2</Title>
+<Expression>y0+A*exp(-x/t)</Expression>
+<Variable>x</Variable>
+<Range>0	65.5</Range>
+<Points>100</Points>
+<Constant>A	-2548.79016787764</Constant>
+<Constant>t	793966.301567798</Constant>
+<Constant>y0	2548.78588655412</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement3</Title>
+<Expression>A*x</Expression>
+<Variable>x</Variable>
+<Range>0	65.5</Range>
+<Points>100</Points>
+<Constant>A	0.00312201678778058</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement4</Title>
+<Expression>A*x</Expression>
+<Variable>x</Variable>
+<Range>0	65.5</Range>
+<Points>100</Points>
+<Constant>A	0.022735087932301</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-0.2	1.6	0	10	5	0	0
+scale	1	-0.2	1.6	0	10	5	0	0
+scale	2	-10	70	0	9	5	0	0
+scale	3	-10	70	0	9	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-9.1989987484355</x>
+<y>1.4735135135135</y>
+<right>23.1414267834793</right>
+<bottom>1.17675675675676</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)Déplacement en Y (23 nm/min)
+\l(2)Déplacement en Z (3 nm/min)
+</Text>
+<Font>Cantarell	14	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[07/06/16 11:03	Graphe: ''Graphe1'']
+Regression linéaire de données: Derive_Mecho_Déplacement Y, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+De x  = 0,0000000000000e+00 à x  = 2,9000000000000e+01
+B (y-intercept) = 2,9846862387710e-01 +/- 1,1004257360641e-01
+A (slope) = 3,6257323265200e-01 +/- 6,3884208899058e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4,8227133659206e-02
+R^2 = 0,9965966417305
+Coefficient R^2 ajusté = 0,9959159700767
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,2196067705222
+RSS (Restes de la somme des carrés) = 0,5304984702513
+---------------------------------------------------------------------------------------
+[07/06/16 11:04	Graphe: ''Graphe1'']
+Ajustement non-linéaire de données: Derive_Mecho_Déplacement Y, utilisant la fonction: A*x
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 2,9000000000000e+01
+A = 3,7700434254645e-01 +/- 4,3733282865006e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7,3773764771966e-02
+R^2 = 0,9943205441715
+Coefficient R^2 ajusté = 0,9938042300053
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,2716132632475
+RSS (Restes de la somme des carrés) = 0,8852851772636
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[07/06/16 11:05	Graphe: ''Graphe1'']
+Ajustement non-linéaire de données: Derive_Mecho_Déplacement Z, utilisant la fonction: A*x
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 2,9000000000000e+01
+A = 2,1157690063368e-01 +/- 8,8808513382010e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,0421945848726e-01
+R^2 = 0,9049845608706
+Coefficient R^2 ajusté = 0,896346793677
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,5515609290797
+RSS (Restes de la somme des carrés) = 3,650633501847
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+
+[07/06/16 11:12	Graphe: ''Graphe1'']
+Ajustement non-linéaire de données: Derive_Mecho_Déplacement Z, utilisant la fonction: y0+A*exp(-x/t)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 2,9000000000000e+01
+A = -6,7597752080703e+00 +/- 1,8671185919212e-01
+t = 1,8589508035830e+01 +/- 1,1806140191498e+00
+y0 = 6,8011073963664e+00 +/- 2,1188020372890e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6,1054876713786e-03
+R^2 = 0,9984109180176
+Coefficient R^2 ajusté = 0,9978812240235
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,07813762007752
+RSS (Restes de la somme des carrés) = 0,06105487671379
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 12
+État = success
+---------------------------------------------------------------------------------------
+[07/06/16 11:12	Graphe: ''Graphe1'']
+Ajustement non-linéaire de données: Derive_Mecho_Déplacement Y, utilisant la fonction: y0+A*exp(-x/t)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 2,9000000000000e+01
+A = -3,5698189176625e+01 +/- 7,5847168962484e+00
+t = 8,2673120239953e+01 +/- 2,1108339776026e+01
+y0 = 3,5710507641482e+01 +/- 7,6540319004892e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2,1009123104163e-02
+R^2 = 0,9986521813566
+Coefficient R^2 ajusté = 0,9982029084755
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,1449452417438
+RSS (Restes de la somme des carrés) = 0,2100912310416
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 5
+État = success
+---------------------------------------------------------------------------------------
+[07/06/16 11:12	Graphe: ''Graphe1'']
+Ajustement non-linéaire de données: Derive_Mecho_Déplacement Z, utilisant la fonction: y0+A*exp(-x/t)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 2,9000000000000e+01
+A = -6,7597760122330e+00 +/- 1,8671197548939e-01
+t = 1,8589513753478e+01 +/- 1,1806147169787e+00
+y0 = 6,8011083937793e+00 +/- 2,1188032786373e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6,1054876713851e-03
+R^2 = 0,9984109180176
+Coefficient R^2 ajusté = 0,9978812240235
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,07813762007756
+RSS (Restes de la somme des carrés) = 0,06105487671385
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 7
+État = success
+---------------------------------------------------------------------------------------
+[07/06/16 11:29	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Déplacement Y, utilisant la fonction: y0+A*exp(-x/t)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 6,5500000000000e+01
+A = -4,4347676737776e+00 +/- 4,9059211407079e+00
+t = 1,7530826759428e+02 +/- 2,3256224394888e+02
+y0 = 4,4838327453625e+00 +/- 4,9326635582881e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5,2877983801114e-03
+R^2 = 0,9863820070445
+Coefficient R^2 ajusté = 0,9795730105668
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,07271724953621
+RSS (Restes de la somme des carrés) = 0,03701458866078
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 17
+État = success
+---------------------------------------------------------------------------------------
+[07/06/16 11:29	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Déplacement Z, utilisant la fonction: y0+A*exp(-x/t)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 6,5500000000000e+01
+A = -2,5487901678776e+03 +/- 1,1560088894157e+07
+t = 7,9396630156780e+05 +/- 3,6011702974209e+09
+y0 = 2,5487858865541e+03 +/- 1,1560088881402e+07
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4,0614705376064e-04
+R^2 = 0,9553527555008
+Coefficient R^2 ajusté = 0,9330291332511
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,02015309042704
+RSS (Restes de la somme des carrés) = 0,002843029376324
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 24
+État = success
+---------------------------------------------------------------------------------------
+[07/06/16 11:30	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Déplacement Z, utilisant la fonction: A*x
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 6,5500000000000e+01
+A = 3,1220167877806e-03 +/- 1,6390766286714e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,2580077357935e-04
+R^2 = 0,9539523009313
+Coefficient R^2 ajusté = 0,9481963385478
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,01804995217665
+RSS (Restes de la somme des carrés) = 0,002932206962214
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[07/06/16 11:30	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Déplacement Y, utilisant la fonction: A*x
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 6,5500000000000e+01
+A = 2,2735087932301e-02 +/- 7,5986647210825e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7,0020976326832e-03
+R^2 = 0,9768147998622
+Coefficient R^2 ajusté = 0,9739166498449
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,0836785374674
+RSS (Restes de la somme des carrés) = 0,06301887869415
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[07/06/16 11:32	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Déplacement Y, utilisant la fonction: A*exp(-x/t)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 6,5500000000000e+01
+A = 6,0109999985595e-01 +/- 1,9039985906299e-01
+t = 1,5340910410755e+11 +/- 8,7901020521616e+19
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,3975811262318e-01
+R^2 = -3,625668654195e-10
+Coefficient R^2 ajusté = -0,2857142861804
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,5828877358662
+RSS (Restes de la somme des carrés) = 2,718064900985
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 75
+État = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[07/06/16 11:33	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Déplacement Y, utilisant la fonction: A*exp(-x/t)-A
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 6,5500000000000e+01
+A = -2,5409302432984e+00 +/- 8,5770779111796e-01
+t = 8,1507265188284e+01 +/- 3,8670334326264e+01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5,3273673793494e-03
+R^2 = 0,9843201172147
+Coefficient R^2 ajusté = 0,9798401507046
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,07298881681018
+RSS (Restes de la somme des carrés) = 0,0426189390348
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 13
+État = success
+---------------------------------------------------------------------------------------
+
+</log>
