@@ -1,26 +1,75 @@
+Dans cette partie, nous allons détailler le dispositif expérimental qui a été mis en place afin de caractériser au mieux les pointes fibrées.
 
-\section{La mise en place de l'expérience}
-\subsection{Dérive des moteurs Mechonics}
-Utilisation de deux fibres métallisées (Spot plus petit = meilleure précision).
+Nous détaillerons d'abord l'ensemble de ce qui compose l'expérience, comme l'injection du laser, les appareils utilisés pour le positionnement des pointes, ainsi que les instruments de mesures que nous avons utilisé.
 
-On peut remarquer dans la figure \ref{mechonics_avant} que la fibre fixée sur les Mechonics se déplace jusqu'à 500 nm/minute. Cette dérive suit une loi exponentielle, on a alors supposé une relâche mécanique des supports, ou bien électrique au niveau du contrôleur: une mauvaise mise à la masse des moteurs pourrait entraîner une telle dérive.
+Enfin, nous verrons le processus d'élaboration des pointes fibrées et des pointes métallisées.
 
-Après mise à la masse des connecteurs des Mechonics, cette vitesse est tombée à 23 nm/minute selon Y et même 3nm/minute selon Z, comme on peut le voir sur la courbe \ref{mechonics_apres}.
-\par
+\section{Positionnement des pointes fibrées}
+Le positionnement des pointes est effectué grâce à deux jeux de moteurs piezoélectriques, chacun permettant un déplacement dans les trois directions.
+\begin{description}
+    \item[Les moteurs piezoélectriques inertiels\footnotemark]\footnotetext{Mechonics MS30} utilisent le mécanisme de "stick-and-slip", en jouant sur des coefficients de frottement statique et dynamique très différents entre plateau mobile et les moteurs piezo.
 
+    Un déplacement lent des piézos entraîne alors le plateau ("stick"), mais un déplacement rapide laisse le plateau glisser, sans bouger ("slip")." La tension appliquée sur les éléments piezoélectriques aura alors une forme de dent de scie.
+
+    Avoir un plateau désolidarisé des éléments piezoélectriques permet d'avoir une gamme de déplacement très large (quelques cm), mais une précision faible (environ 30nm par pas). Ils permettent donc de positionner grossièrement les fibres l'une en face de l'autre.
+
+    \item[Les platines piezoélectriques\footnotemark,]\footnotetext{Physik Instrumente PI P620} à l'inverse, ont une résolution sub-nanométrique, un positionnement absolu et un champ de déplacement réduit à 50 $\mu$m. Ils permettent alors d'aligner au mieux les pointes et d'effectuer des balayages afin d'étudier spatialement l'émission des pointes.
+\end{description}
+
+Sur chacun des jeux de moteurs piezoélectriques est fixé un support rainuré, sur lequel on peut alors fixer des fibres. Celles-ci sont fixées dans les rainures avec des plaquettes de téflon vissées sur le support. Ainsi, les fibres sont fixées parallèlement et peuvent être positionnées face à face précisément.
+
+
+On peut rajouter une troisième fibre, clivée, sur un des supports, ainsi qu'un miroir sur l'autre support. La cavité de Fabri-Perrot ainsi créée permet, en injectant de la lumière blanche, de mesurer très précisément la distance relative des deux fibres: Les réfléxions interfèrent, créant ainsi des franges (fig. \ref{franges_distance}). La transformée de Fourier de ce signal nous donne directement la distance d entre le miroir et la fibre clivée (fig. \ref{schema_spectro_distance}).
+
+Cette mesure permet alors d'asservir la distance relative entre les pointes, avec une précision de la dizaine de nm.
 
 \begin{figure}[h] \centering
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[c]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Schemas/SpectroDistance"}.pdf}
+        \caption{Schéma de mesure de la distance}
+        \label{schema_spectro_distance}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/interfero"}.png}
+        \caption{Franges pour différentes distances $d$}
+        \label{franges_distance}
+    \end{subfigure}
+    \caption{Schéma de mesure de la distance par interférence (a), et franges pour différentes distances fibre-miroir (b)}
+\end{figure}
+
+Cette méthode ne nous donnant que la distance relative entre les pointes, la méthode pour obtenir la distance absolue est de rapprocher lentement les pointes jusqu'à ce qu'elles se touchent. Le contact est alors facilement visible par microscope, lorsqu'un déplacement transversal d'une pointe entraîne l'autre pointe. Une approche soigneuse permet de ne pas abîmer les pointes et d'obtenir cette distance absolue avec une précision d'environ 50nm.
+
+\subsection{Dérive du positionnement}
+Malheureusement, les moteurs piezoélectriques Mechonics ne permettent pas un positionnement absolu, et ne sont pas asservis en position: une dérive peut alors apparaître.
+
+Une faible dérive est sans impact, mais nous avons observé pendant mon stage une vitesse de dérive jusqu'à 500 nm/minute, ce qui empêche toute mesure correcte. En effet, les mesures effectuées consistent généralement en balayages de quelques microns de large, qui durent quelques minutes.
+
+\begin{figure}[h] \centering
+    \begin{subfigure}[b]{0.43\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Derive_Mecho/Avant"}.png}
         \caption{Avant mise à la masse}
         \label{mechonics_avant}
     \end{subfigure}
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.43\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Derive_Mecho/Apres"}.png}
         \caption{Après mise à la masse}
         \label{mechonics_apres}
     \end{subfigure}
-    \caption{Déplacement des Mechonics avant mise à la masse}
+    \caption{Dérive des moteurs Mechonics avant et après mise à la masse}
+\end{figure}
+
+La dérive que nous avons pu mesurer suit une loi exponentielle, ce qui traduit une relâche mécanique des supports ou électrique au niveau du contrôleur des moteurs. Nous avons alors décidé de connecter les moteurs piezoélectriques à la masse, ce qui a grandement réduit la dérive, jusqu'à 23nm/minute selon l'axe Y comme on peut le voir sur la figure \ref{mechonics_apres}.
+
+Néanmoins le problème de dérive reste: même avec la mise à la masse des moteurs piezoélectriques, une dérive importante est apparue quelques fois encore lors de mon stage.
+
+\section{Chemin optique et injection Laser}
+La source de lumière utilisée pour les mesures de transmission est une diode Laser émettant à $\lambda = 808$nm, ayant une puissance maximale de 250mW\footnote{Lumics LU0808-M250}. Cette diode est directement fibrée, ce qui permet l'injection d'un mode gaussien circulaire dans les fibres.
+
+La longueur d'onde a été choisie dans l'optique de l'utilisation des pinces optiques : éloignée des bandes d'absorption de l'eau et des tissus biologiques, ainsi que du visible pour permettre le piégeage et la caractérisation de particules photo-luminescentes. Elle est aussi éloignée de la bande d'absorption de l'or qui est utilisé pour les pointes métallisées, tout en restant guidée par les fibre optiques utilisées pour fabriquer les pointes.
+
+\begin{figure}[h] \centering
+    \includegraphics[width=0.9\textwidth]{{"Images/Schemas/experience"}.pdf}
+    \caption{Schéma de mesure de la distance par interférence (a), et franges pour différentes distances fibre-miroir (b)}
 \end{figure}
 
 

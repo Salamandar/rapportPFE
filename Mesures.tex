@@ -6,8 +6,8 @@ Ensuite, nous allons mesurer l'évolution de la transmission des pointes en fonc
 
 Enfin, nous allons étudier le spectre de transmission d'une telle pince, afin de mettre en valeur la transmission des différents éléments de la pince optique.
 
-\section{Variation de la polarisation de la lumière incidente}
-Il avait été vu dans de précédentes études que la transmission des pointes métallisées dépendait fortement de la polarisation de la lumière incidente \cite{Decombe}. Notamment, cette dépendance doit se retrouver essentiellement pour des apex elliptiques.
+\section{Influence de la polarisation incidente sur l'émission}
+Il avait été vu dans de précédentes études que la transmission des pointes métallisées dépendait fortement de la polarisation de la lumière incidente \cite{Decombe}. Notamment, cette dépendance doit se retrouver exclusivement pour des apex elliptiques.
 Les modélisations qui avaient été effectuées peuvent être retrouvées dans la figure \ref{theorie_polar_metal}.
 \begin{figure}[h]\centering
     \includegraphics[width=0.15\textwidth]{{"Images_pasmoi/Polar_0"}.png}\hspace*{5mm}
@@ -24,7 +24,7 @@ La figure \ref{var_lambda_nues} présente les profils d'émission d'une pointe n
 \begin{figure}
     \begin{center}
         \includegraphics[width=.5\textwidth]{Images/Photos_Fibres/Camera/Pointes_nues_air_crop.png}
-        \caption{Deux pointes non métallisées}
+        \caption{Photo au microscope de deux pointes non métallisées, une en mauvais état (gauche) et en bon état (droite)}
         \label{pointes_nues_photo}
     \end{center}
 \end{figure}
@@ -32,11 +32,11 @@ La figure \ref{var_lambda_nues} présente les profils d'émission d'une pointe n
 \begin{figure}[h]\centering
     \begin{subfigure}[b]{0.15\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Nues_2/0deg"}.png}
-        \caption{$\lambda$ = 0\si{\degree}}
+        \caption{$\theta$ = 0\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.15\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Nues_2/45deg"}.png}
-        \caption{$\lambda$ = 90\si{\degree}}
+        \caption{$\theta$ = 90\si{\degree}}
     \end{subfigure}
     \caption{Influence de la polarisation sur la transmission de pointes non métallisées}
     \label{var_lambda_nues}
@@ -56,31 +56,31 @@ La figure \ref{var_lambda_metal} présente les résultats obtenus avec une point
 
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/32d"}.png}
-        \caption*{$\lambda$ = 0\si{\degree}}
+        \caption*{$\theta$ = 0\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/47d"}.png}
-        \caption*{$\lambda$ = 30\si{\degree}}
+        \caption*{$\theta$ = 30\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/62d"}.png}
-        \caption*{$\lambda$ = 60\si{\degree}}
+        \caption*{$\theta$ = 60\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/77d_2"}.png}
-        \caption*{$\lambda$ = 90\si{\degree}}
+        \caption*{$\theta$ = 90\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/92d"}.png}
-        \caption*{$\lambda$ = 120\si{\degree}}
+        \caption*{$\theta$ = 120\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/107d"}.png}
-        \caption*{$\lambda$ = 150\si{\degree}}
+        \caption*{$\theta$ = 150\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Var_Lambda/Metal_2/122d_3"}.png}
-        \caption*{$\lambda$ = 180\si{\degree}}
+        \caption*{$\theta$ = 180\si{\degree}}
     \end{subfigure}
     \caption{Profils d'émission en fonction de la polarisation incidente}
     \label{var_lambda_metal}
@@ -88,14 +88,14 @@ La figure \ref{var_lambda_metal} présente les résultats obtenus avec une point
 
 On peut tout d'abord noter que les spots semblent beaucoup plus larges ($\sim 4\mu m$) que l'apex de la pointe métallisée, qui est de l'ordre de 200nm. Nous mesurons en effet, comme nous l'avons vu dans la première partie (TODO), la convolution entre la fibre émettrice et réceptrice ; La fibre réceptrice, non métallisée, a une grande ouverture optique, ce qui donne de telles mesures.
 
-Enfin, on remarque bien une dépendance en polarisation telle qu'on l'attendait: pour $\lambda = 0\si{\degree}$, il apparaît deux spots assez éloignés, la lumière incidente est alors polarisée selon le petit axe de la pointe métallisée ; tandis que pour  $\lambda = 90\si{\degree}$, on ne peut distinguer qu'un seul lobe: on ne distingue pas les deux spots prévus par la simulation.
+Enfin, on remarque bien une dépendance en polarisation telle qu'on l'attendait: pour $\theta = 0\si{\degree}$, il apparaît deux spots assez éloignés, la lumière incidente est alors polarisée selon le petit axe de la pointe métallisée ; tandis que pour  $\theta = 90\si{\degree}$, on ne peut distinguer qu'un seul lobe: on ne distingue pas les deux spots prévus par la simulation.
 
 Ces mesures nous permettent notamment de conclure que le grand axe de notre pointe métallisée est orienté horizontalement selon les profils d'émission.
 
 %TODO mettre ça dans la première partie %De telles mesures ont donc été effectuées, en faisant varier la polarisation injectée grâce à un polariseur (qui permet de filtrer une seule polarisation) et une lame $\lambda/2$ (qui permet de faire varier cette polarisation).
 
 %TODO: utiliser 2 pointes applaties ? Déjà fait, p. 30… Pas très concluant.
-%On peut alors observer dans les figures \ref{var_lambda_200nm} et \ref{var_lambda_3um} les spectres selon la polarisation. La pointe métalisée est relativement ronde, ce qui se traduit par une assez faible dépendance en polarisation. On observe tout de fois un déplacement du spot principal d'émission entre $\lambda/2 = 0^o$ et $\lambda/2 = 45^o$.
+%On peut alors observer dans les figures \ref{var_lambda_200nm} et \ref{var_lambda_3um} les spectres selon la polarisation. La pointe métalisée est relativement ronde, ce qui se traduit par une assez faible dépendance en polarisation. On observe tout de fois un déplacement du spot principal d'émission entre $\theta/2 = 0^o$ et $\theta/2 = 45^o$.
 % \begin{figure}\centering
 %         \includegraphics[width=0.3\textwidth]{{"Images/Photos_Fibres/l27fm5_ronde"}.png}
 %         \caption{Pointe métallisée presque circulaire (peu de dépendance en polarisation)}
@@ -118,31 +118,31 @@ Nous avons alors utilisé une fibre non métallisée pour étudier l'émission, 
 
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/0d"}.png}
-        \caption*{$\lambda$ = 0\si{\degree}}
+        \caption*{$\theta$ = 0\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/15d"}.png}
-        \caption*{$\lambda$ = 30\si{\degree}}
+        \caption*{$\theta$ = 30\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/30d"}.png}
-        \caption*{$\lambda$ = 60\si{\degree}}
+        \caption*{$\theta$ = 60\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/45d"}.png}
-        \caption*{$\lambda$ = 90\si{\degree}}
+        \caption*{$\theta$ = 90\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/60d"}.png}
-        \caption*{$\lambda$ = 120\si{\degree}}
+        \caption*{$\theta$ = 120\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/75d"}.png}
-        \caption*{$\lambda$ = 150\si{\degree}}
+        \caption*{$\theta$ = 150\si{\degree}}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarLambda/90d"}.png}
-        \caption*{$\lambda$ = 180\si{\degree}}
+        \caption*{$\theta$ = 180\si{\degree}}
     \end{subfigure}
     \caption{Profils d'émission en fonction de la polarisation incidente}
     \label{var_lambda_bessel}
@@ -174,20 +174,17 @@ On peut facilement reconnaître des fibres de bonne et mauvaise qualité: une po
 
 
 \begin{figure}[h]\centering
-TODO inclure des scans + une courbe d'évolution dans l'air et dans l'eau
+TODO inclure les scans + une courbe d'évolution dans l'air et dans l'eau
     \caption{Profils d'émission dans l'air (-) et dans l'eau (-) et évolution du waist avec la distance ()}
     \label{nues_distance}
 \end{figure}
 
 La largeur des spots évolue linéairement avec la distance dans l'air et dans l'eau, avec une largeur au contact autour de $nm$ dans les deux milieux.
-On obtient l'angle d'émission de la pointe à partir de la pente du waist: 
-\[
-    \theta_{\text{émission}} = \arctan(\text{pente})
-\]
-Et l'ouverture numérique de la pointe est obtenue par:
+On obtient l'angle d'émission de la pointe à partir de la pente du waist: $\theta_{\text{émission}} = \arctan(\text{pente}) $, et l'ouverture numérique de la pointe est définie par:
 \[
     N.A = n\sin(\frac{\theta}{2})
 \]
+où $\theta$ est l'angle total du cône d'émission.
 
 Dans l'air, on trouve un angle d'émission de $18\si{\degree}$, qui donne une ouverture numérique de 0,16.
 
@@ -201,214 +198,101 @@ Cette intensité est trois fois plus importante dans l'eau que dans l'air: cela 
 \subsection{Pointes métalliques}
 Nous avons alors fait la même étude pour des pointes métalliques. Ici nous avons pris une pointe la plus circulaire possible, pour limiter l'impact de la polarisation incidente sur l'émission.
 
+La figure \ref{emission_metal_distance} présente les scans effectués dans l'air à très faible distance ($d=50nm$) et à distance plus élevée ($d=1\mu m$) ainsi que la courbe d'évolution de la largeur du spot. 
+
+On remarque tout d'abord que le spot, à faible distance, est de forme elliptique : on retrouve la forme de l'apex de la pointe métallique utilisée. En s'éloignant de la pointe, le spot devient progressivement circulaire.
+
 \begin{figure}[h]\centering
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.1"}.png}
-        \caption*{100nm}
+    \begin{subfigure}[c]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/VarDistance/26"}.png}
+        \caption*{$d = 50nm$}
     \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.2"}.png}
-        \caption*{200nm}
+    \begin{subfigure}[c]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/VarDistance/VarDistance"}.png}
+        \caption*{Évolution du waist avec la distance}
     \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.3"}.png}
-        \caption*{300nm}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.4"}.png}
-        \caption*{400nm}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=0.5"}.png}
-        \caption*{500nm}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=1"}.png}
-        \caption*{1$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=2"}.png}
-        \caption*{2$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=3"}.png}
-        \caption*{3$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=4"}.png}
-        \caption*{4$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=5"}.png}
-        \caption*{5$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=6"}.png}
-        \caption*{6$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=7"}.png}
-        \caption*{7$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=8"}.png}
-        \caption*{8$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=9"}.png}
-        \caption*{9$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/1/d=10"}.png}
-        \caption*{10$\mu$m}
+    \begin{subfigure}[c]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/VarDistance/25"}.png}
+        \caption*{$d = 1\mu m$}
     \end{subfigure}
     \caption{Émission d'une pointe métallique en fonction de la distance entre les pointes}
     \label{emission_metal_distance}
 \end{figure}
 
+Enfin, nous avons à faible distance une évolution quadratique, puis une évolution linéaire au-delà de 800nm.
+
 
 \subsection{Pointes de Bessel}
+Enfin, nous avons étudié l'évolution de l'émission d'une pointe de Bessel en fonction de la distance.
+
+Compte tenu de la structure du faisceau de Bessel (ref chapitre 1), nous attendons une divergence très lente du spot avec la distance. C'est pourquoi, contrairement aux pointes métalliques pour lequelles nous n'avons pas dépassé quelques microns de distance de mesure, nous sommes allés jusqu'à $220\mu m$ pour les pointes de Bessel.
+
 \begin{figure}[h]\centering
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=4.9"}.png}
-        \caption*{d=4.9$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=20.1"}.png}
-        \caption*{d=20$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=34.6"}.png}
-        \caption*{d=35$\mu$m}
+        \caption*{d=5$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=62"}.png}
-        \caption*{d=62$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=75"}.png}
-        \caption*{d=75$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=88"}.png}
-        \caption*{d=88$\mu$m}
+        \caption*{d=60$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=101"}.png}
-        \caption*{d=101$\mu$m}
-    \end{subfigure}\\
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=114"}.png}
-        \caption*{d=114$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=126"}.png}
-        \caption*{d=126$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=139"}.png}
-        \caption*{d=139$\mu$m}
+        \caption*{d=100$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=150"}.png}
         \caption*{d=150$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=173"}.png}
-        \caption*{d=173$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=197"}.png}
-        \caption*{d=197$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=221"}.png}
-        \caption*{d=221$\mu$m}
-    \end{subfigure}
-    \caption{Variation de l'émission d'une pointe de Bessel en fonction de la distance (TODO faire un choix dans les images)}
+        \caption*{d=200$\mu$m}
+    \end{subfigure}\\
+    \includegraphics[width=0.5\textwidth]{{"Images/Bessel/VarDistance/waist2"}.png}
+    TODO épurer la figure
+    \caption{Variation de l'émission d'une pointe de Bessel en fonction de la distance}
     \label{var_distance_bessel}
 \end{figure}
 
-\begin{figure}[h]
-    \begin{center}
-        \includegraphics[width=0.7\textwidth]{{"Images/Bessel/VarDistance/waist2"}.png}
-        \caption{Évolution de la largeur du spot d'émission d'une pointe de Bessel}
-        \label{var_distance_bessel_courbe}
-    \end{center}
-\end{figure}
+On constate en effet sur la figure \ref{var_distance_bessel} que le spot évolue linéairement très peu sur $200\mu m$. On obtient un angle d'ouverture autour de $0.47\si{\degree}$. Cela promet un piégeage très efficace sur de grandes distances.
 
-\subsection{Franges d'émission des pointes de Bessel}
-Dummy text
+Paradoxalement, l'intensité transmise dans le spot n'est pas constante : elle évolue selon $\dfrac{1}{\sqrt{\text{distance}}}$ comme pour des pointes classiques.TODO explication
+
+En effet, pour obtenir une intensité constante, il faudrait que les plans d'onde formant le faisceau de Bessel soient infinis, ce qui est en pratique impossible.
+
+
+\subsubsection*{Franges d'émission des pointes de Bessel}
+Une autre façon d'étudier est d'observer les franges du faisceau de Bessel. Or l'amplitude de ces franges est extrêmement faible face à celle du spot central. Pour cela, nous imposons alors à notre mesure d'être saturée au niveau du spot, pour observer facilement les franges. La figure \ref{franges_bessel} présente de telles mesures, et nous pouvons voir le déplacement des franges
+
+Un outil numérique nous permet enfin de mesurer le rayon des franges. La figure \ref{franges_bessel_courbe} présente l'évolution du rayon d'une des franges observables.
+
+
 \begin{figure}[h]\centering
     \begin{subfigure}[b]{0.156\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=5"}.png}
         \caption*{5$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=6"}.png}
-        \caption*{6$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=7"}.png}
-        \caption*{7$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=8"}.png}
-        \caption*{8$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=9"}.png}
-        \caption*{9$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=10"}.png}
-        \caption*{10$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=12"}.png}
-        \caption*{12$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=14"}.png}
         \caption*{14$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=16"}.png}
-        \caption*{16$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=18"}.png}
-        \caption*{18$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.156\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=20"}.png}
         \caption*{20$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=25"}.png}
-        \caption*{25$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=30"}.png}
-        \caption*{30$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=35"}.png}
-        \caption*{35$\mu$m}
+        \caption*{30$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.156\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=40"}.png}
         \caption*{40$\mu$m}
     \end{subfigure}
     \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=45"}.png}
-        \caption*{45$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
         \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=50"}.png}
         \caption*{50$\mu$m}
     \end{subfigure}
-    \caption{Franges de Bessel en fonction de la distance (TODO faire un choix dans les images)}
+    \caption{Franges de Bessel en fonction de la distance}
     \label{franges_bessel}
 \end{figure}
 
@@ -420,32 +304,53 @@ Dummy text
     \end{center}
 \end{figure}
 
+La frange se déplace alors selon un angle de $8.5\mu m$, ce qui est beaucoup plus grand que l'angle de divergence du spot central.
 
-
-
-
+\newpage
 \section{Transmission en spectre}
+Nous avons jusqu'ici étudié le profil spatial d'émission des pointes, pour les pointes non métallisées, métallisées et les pointes de Bessel.
+
+Un autre axe d'étude du dispositif consiste à mesurer la transmission des pointes. Dans cette partie, nous nous intéresserons donc aux mesures en émission et transmission des différents types de pointes.
+
+
 \subsection{Normalisation}
-\begin{figure}[h]
-    \begin{center}
-        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/NormalisationIntensite"}.png}
-        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/NormalisationTransmission"}.png}
-        \caption{Courbes de normalisation en intensité et en transmission}
-    \end{center}
-        \label{normalisation_transmission}
+Dans un premier temps, il s'agit de "faire le blanc" en éliminant les contributions au spectre de la lumière blanche, des fibres et des connecteurs de fibres CamSplice.
+
+La figure \ref{normalisation_transmission} présente ces résultats. Les courbes de gauche représentent les intensités mesurées avec la lampe blanche dirigée vers le spectromètre, puis lorsqu'on les connecte avec la fibre SM600, et enfin on connecte la fibre S630-HP entre deux fibres SM600.
+
+Cette dernière configuration est, à l'exception des pointes elles-mêmes, équivalente à la configuration que nous utilisons pour mesurer la transmission des pointes. Elle nous servira donc de normalisation pour nos mesures suivantes.
+
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[c]{0.7\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Spectro/blancspectres"}.pdf}
+    \end{subfigure}\\
+    \begin{subfigure}[c]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Spectro/SpectresNormalisation"}.png}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Spectro/SpectresNormalisation-Transmission"}.png}
+    \end{subfigure}
+    \caption{Courbes de normalisation en intensité et en transmission}
+    \label{normalisation_transmission}
 \end{figure}
 
-\subsection{Comparaison des fibres}
+Ces mesures nous permettent aussi de constater qu'entre 600nm et 850nm, la transmission de notre dispositif reste stable.
+
+
+\subsection{Caractérisation en spectre des pointes}
+Nous avons donc effectué des mesures de transmission pour deux fibres non métallisées, puis pour une fibre métallisée émettant vers une fibre non métallisée. Pour chaque fibre, nous avons mesuré la transmission dans l'air et dans l'eau.
+
+Nous nous attendons à 
+
+
 
 \begin{figure}[h]
     \begin{center}
-        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/FibresNues"}.png}\\
-        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/FibresMetal"}.png}
+        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/Intensite_toutes"}.png}
+        \includegraphics[width=0.47\textwidth]{{"Images/Spectro/Transmission_toutes"}.png}
         \caption{Transmission des pointes nues et métallisées, dans l'eau et dans l'air}
     \end{center}
-        \label{pointes_transmission}
+    \label{pointes_transmission}
 \end{figure}
 
-
-
-Dummy text
