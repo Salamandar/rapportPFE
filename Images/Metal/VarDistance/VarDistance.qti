@@ -1,0 +1,220 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	Python
+<windows>	2
+<table>
+Table1	30	4	16/06/16 14:05
+geometry	0	0	572	655	active
+header	1[X]	3[X]	WaistY[Y]	WaistZ[Y]
+ColWidth	100	100	100	100	
+<com>
+<col nr="1">
+(26-col("1", i))*1000
+</col>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	26	0	1.187	0.79
+1	25.6	400	1.212	0.77
+2	25.5	500	1.22	0.97
+3	25.4	600	1.236	1.298
+4	25.3	700	1.245	1.292
+5	25.2	800	1.267	1.37
+6	25.1	900	1.296	1.438
+7	25	1000	1.341	1.393
+8	0	1100	1.39	
+9	0	1200	1.425	
+10	0	1300	1.46	
+</data>
+</table>
+<multiLayer>
+Graphe2	1	1	16/06/16 14:10
+geometry	669	42	860	575	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	730	400
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	842	512
+<PageGeometry>0.00586854	0.00948767	0.988263	0.971537</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>1</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	1
+EnabledAxes	1	1	1	1	
+AxesTitles	Distance (nm)	Waist (µm)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Cantarell	16	75	0	0	0
+ScaleFont0	Cantarell	16	75	0	0	0
+ScaleFont1	Cantarell	16	75	0	0	0
+ScaleFont2	Cantarell	16	75	0	0	0
+ScaleFont3	Cantarell	16	75	0	0	0
+AxisFont0	Cantarell	16	50	0	0	0
+AxisFont1	Cantarell	16	50	0	0	0
+AxisFont2	Cantarell	16	50	0	0	0
+AxisFont3	Cantarell	16	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#333333	#333333	#333333	#333333
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_3	Table1_WaistY	0	1	#000000	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement2</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>600	1300</Range>
+<Points>100</Points>
+<Constant>A	0.00041200000004127</Constant>
+<Constant>B	0.92919999995424</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1.4</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+curve	Table1_3	Table1_WaistZ	0	1	#ff0000	0	2	7	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	29	1
+scale	0	0.7	1.5	0	9	5	0	0
+scale	1	0.7	1.5	0	9	5	0	0
+scale	2	-500	1500	0	5	5	0	0
+scale	3	-500	1500	0	5	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[16/06/16 15:19	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table1_2, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e+03 à x  = 7,0000000000000e+02
+A = 3,1700000093246e-04 +/- 3,6918830086713e-05
+B = 1,0177999992093e+00 +/- 3,1651303430642e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 6,8150000000001e-05
+R^2 = 0,97358911011
+Coefficient R^2 ajusté = 0,9207673303299
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,008255301327026
+RSS (Restes de la somme des carrés) = 0,0001363
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[16/06/16 15:19	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table1_2, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e+03 à x  = 8,0000000000000e+02
+A = 3,7000000086624e-04 +/- 4,6188021449012e-05
+B = 9,6833333255350e-01 +/- 4,1739935414622e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4,2666666666663e-05
+R^2 = 0,9846559578039
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,006531972647422
+RSS (Restes de la somme des carrés) = 4,266666666666e-05
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[16/06/16 15:19	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table1_2, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e+03 à x  = 8,0000000000000e+02
+A = 3,7000000008961e-04 +/- 4,6188022348129e-05
+B = 9,6833333325251e-01 +/- 4,1739936244859e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4,2666666666664e-05
+R^2 = 0,9846559578039
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,006531972647422
+RSS (Restes de la somme des carrés) = 4,266666666666e-05
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 1
+État = success
+---------------------------------------------------------------------------------------
+[16/06/16 15:19	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table1_2, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e+03 à x  = 9,0000000000000e+02
+A = 4,5000000000000e-04 +/- inf
+B = 8,9100000000000e-01 +/- inf
+--------------------------------------------------------------------------------------
+Chi^2/doF = inf
+R^2 = 1
+RSS (Restes de la somme des carrés) = 4,930380657631e-32
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[16/06/16 15:22	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table1_2, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,3000000000000e+03
+A = 2,2413496925876e-04 +/- 2,9573116317733e-05
+B = 1,1248957055728e+00 +/- 2,5298728194105e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,2959525562372e-03
+R^2 = 0,8645422992803
+Coefficient R^2 ajusté = 0,8306778741004
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,03599934105282
+RSS (Restes de la somme des carrés) = 0,01166357300613
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[16/06/16 15:23	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table1_2, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 9,0000000000000e+02 à x  = 1,3000000000000e+03
+A = 4,1200000004127e-04 +/- 1,8147543282755e-05
+B = 9,2919999995424e-01 +/- 2,0126599079632e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,2933333333332e-05
+R^2 = 0,9942131527775
+Coefficient R^2 ajusté = 0,9884263055549
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,005738757124442
+RSS (Restes de la somme des carrés) = 9,88e-05
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+
+</log>

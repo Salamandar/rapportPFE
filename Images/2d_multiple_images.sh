@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="Var_Lambda/1"
+dir="Metal/VarDistance"
 
 directory=`realpath $dir`
 gnuscript=`realpath 2d.gnu`

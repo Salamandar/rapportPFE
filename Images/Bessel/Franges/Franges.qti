@@ -46,7 +46,7 @@ Alignement	0	0
 <graph>
 ggeometry	5	4	882	439
 <PageGeometry>0.00560538	0.00884956	0.988789	0.971239</PageGeometry>
-PlotTitle		#000000	4228
+PlotTitle		#000000	4
 <Antialiasing>1</Antialiasing>
 <Autoscaling>1</Autoscaling>
 <ScaleFonts>1</ScaleFonts>
@@ -59,8 +59,8 @@ grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	1
 EnabledAxes	1	1	1	1	
 AxesTitles	%(?X)	%(?Y)			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	5124	5124	5124
-AxesTitleDistance	2	2	2	2
+AxesTitleAlignment	4	4	4	4
+AxesTitleDistance	0	0	0	0
 InvertedTitle	0	0	0	0
 TitleFont	Cantarell	14	75	0	0	0
 ScaleFont0	Cantarell	14	75	0	0	0
@@ -111,33 +111,9 @@ AxesLineWidth	1
 LabelsRotation	0	0	0	0
 LabelsPrefix				
 LabelsSuffix				
-TickLabelsSpace	4	4	4	4
+TickLabelsSpace	4	4	0	4
 ShowTicksPolicy	0	0	0	0
 EnabledTickLabels	1	0	1	0
-<Legend>
-<Frame>1</Frame>
-<Color>#000000</Color>
-<FrameWidth>1</FrameWidth>
-<LineStyle>0</LineStyle>
-<x>7.03125</x>
-<y>21.482352941176</y>
-<right>23.9583333333333</right>
-<bottom>20.0470588235294</bottom>
-<attachTo>1</attachTo>
-<onTop>1</onTop>
-<visible>1</visible>
-<Text>
-\l(1)Rayon de la 3e frange
-\l(2)Fit Linéaire (0,15x + 14,41 µm)
-</Text>
-<Font>Cantarell	14	50	0	0	0</Font>
-<TextColor>#000000</TextColor>
-<Background>#ffffff</Background>
-<Alpha>0</Alpha>
-<Angle>0</Angle>
-<AutoUpdate>1</AutoUpdate>
-<TeXOutput>0</TeXOutput>
-</Legend>
 </graph>
 <LinkXAxes>0</LinkXAxes>
 <ScaleLayers>1</ScaleLayers>
@@ -161,4 +137,5 @@ RSS (Restes de la somme des carrés) = 0,209258856816
 Nombre d'itérations = 2
 État = success
 ---------------------------------------------------------------------------------------
+
 </log>
