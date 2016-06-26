@@ -5,22 +5,26 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[colorlinks,linkcolor={blue!30!black},
                        citecolor={blue!50!black},
-                        urlcolor={blue!80!black}]{hyperref}
+                        urlcolor={blue!80!black},
+                        ]{hyperref}
+\usepackage{titling} % Récupérer titre et auteur
+\usepackage{enumerate} % Styles personnalisés d'énumération
 \usepackage{amsmath,siunitx,array,url} % Symboles, etc
 \usepackage{caption,subcaption,wrapfig,rotating,pdfpages} % Mise en page
-\usepackage[perpage]{footmisc}
+\usepackage[perpage]{footmisc} % Numérotation par page des footnotes
 \usepackage{epic,eepic,graphicx,tikz} % Drawings
 \usepackage[top=2cm,left=2.5cm,right=2.5cm,bottom=2cm]{geometry} % Géométrie de la page, modifier selon le besoin
-%\setlength{\parindent}{4em}
-\setlength{\parskip}{0.4em}
+\setlength{\parskip}{0.4em} % Taille des interlignes entre paragraphes
 \usepackage[babel=true,kerning=true]{microtype}
 
 \addto{\captionsfrench}{\renewcommand{\abstractname}{Introduction}}
 \pdfsuppresswarningpagegroup=1
 \date{}
-\title{Rapport de Projet de Fin d'Études}
+\title{Rapport de Projet de Fin d'Études : Caractérisation de pointes fibrées pour nano-pinces optiques et plasmoniques}
 \author{Félix Piédallu}
-
+\hypersetup{pdftex,
+            pdfauthor=\theauthor,
+            pdftitle=\thetitle}
 
 \begin{document}
 \nocite{*}
@@ -28,14 +32,22 @@
 
 \chapter*{Introduction} % Contexte du stage
 \section*{Les pinces optiques}
-Introduites en 1986 par A. Ashkin\cite{Ashkin}, les pinces optiques permettent de piéger et manipuler, sans contact mécanique, des objets nanométriques. Cette particularité les affirme comme un outil privilégié pour la manipulation et l'isolation de molécules et d'espèces biologiques.
+Introduites en 1986 par A. Ashkin\cite{Ashkin}, les pinces optiques permettent de piéger et de manipuler, sans contact mécanique, des objets nanométriques. Cette particularité non destructive ni invasive les affirme comme un outil privilégié pour la manipulation et l'isolation de molécules et d'espèces biologiques.
 
-Leur fonctionnement repose sur les forces d'interaction entre la matière et le rayonnement 
+Leur fonctionnement repose sur les forces d'interaction entre la matière et le rayonnement optique injecté par la pince. D'une part, la force de gradient attire les particules vers les maxima d'intensité lumineuse, permettant de les piéger au centre d'un faisceau, et proche de la source lumineuse. D'autre part, la force de diffusion pousse les particules dans le sens de propagation du faisceau. La conception d'une pince optique efficace et stable repose alors sur un bon équilibre entre ces deux forces.
 
+Les pinces optiques classiques utilisent alors un faisceau laser gaussien fortement focalisé, afin de maximiser la force de gradient au point focal, et donc l'efficacité du piégeage. Mais depuis les années 2000, les pinces optiques fibrées semble une voie privilégiée pour le piégeage optique \cite{Taguchi,Taylor}. Elles ne nécessitent pas de matériel optique encombrant et peuvent être intégrées et alignées facilement.
 
+De telles pinces optiques utilisent comme source de faisceau des fibres gravées en pointes afin d'obtenir un faisceau très concentré, et donc des gradients l'intensité lumineuse élevés.
 
-\section*{État de l'art (Utilisation des pinces optiques)}
-%\input{0.Introduction}
+\section*{Contexte du stage}
+Le dispositif actuel de pince optique fibrée a été développé dans le cadre de la thèse de Jean-Baptiste Decombe\cite{Decombe}. Elle est composée de deux fibres optiques monomodes, gravées à une extrémité en pointe, ce qui permet d'obtenir un faisceau Gaussien de quelques microns de largeur.
+
+Cette pince optique a permis un piégeage efficace de particules diélectriques sphériques, de tailles allant du micron à quelques 60nm de diamètre.
+
+Le but de mon stage est alors de caractériser au mieux les pointes utilisées afin de connaître au mieux leur émission, spatialement et spectralement. Cela permettra notamment de connaître correctement les différents types de pointes et leurs applications possibles.
+
+Dans une première partie, nous allons détailler l'ensemble du dispositif expérimental que j'ai utilisé durant mon stage, et le protocole d'élaboration des pointes fibrées. Ensuite, nous verrons les caractérisations en émission spatiales et spectrales que j'ai effectuées.
 
 \chapter{L'expérience}
 \input{Experience}
