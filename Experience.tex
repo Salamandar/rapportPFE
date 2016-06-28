@@ -1,10 +1,49 @@
 Dans cette partie, nous allons détailler le dispositif expérimental qui a été mis en place afin de caractériser au mieux les pointes fibrées.
 
-Nous verrons d'abord l'ensemble de ce qui compose l'expérience, comme l'injection du laser, les appareils utilisés pour le positionnement des pointes, ainsi que les instruments de mesures que nous avons utilisés.
+Nous verrons d'abord l'ensemble de ce qui compose l'expérience, comme l'injection du laser, les appareils utilisés pour le positionnement des pointes, ainsi que les instruments de mesures qui ont été utilisés.
 
 Enfin, nous aborderons le processus d'élaboration des pointes fibrées et des pointes métallisées.
 
-\section{Positionnement des pointes fibrées}
+\section{Chemin optique et injection Laser}
+La figure \ref{banc_optique} présente le banc optique et l'ensemble de ses éléments.
+\begin{figure}[h] \centering
+    \includegraphics[width=0.9\textwidth]{{"Images/Schemas/experience"}.pdf}
+    \caption{Schéma du banc optique expérimental}
+    \label{banc_optique}
+\end{figure}
+
+
+
+\begin{enumerate}[{1)}]
+    \item La source de lumière utilisée pour les mesures de transmission est une diode Laser émettant à $\lambda = 808$nm, ayant une puissance maximale de 250mW\footnote{Lumics LU0808-M250}. Cette diode est directement fibrée, ce qui permet l'injection d'un mode gaussien circulaire dans les fibres grâce au port fibré auto-aligné (2).
+
+    La longueur d'onde a été choisie dans l'optique de l'utilisation des pinces optiques: éloignée des bandes d'absorption de l'eau et des tissus biologiques, ainsi que du visible pour permettre le piégeage et la caractérisation de particules photo-luminescentes. Elle est aussi éloignée de la bande d'absorption de l'or qui est utilisé pour les pointes métallisées, tout en restant guidée par les fibre optiques utilisées pour fabriquer les pointes.
+\setcounter{enumi}{2}
+    \item Les densités optiques permettent d'adapter la puissance transmise à volonté
+    \item et 5) Les lames $\lambda/2$ permettent, avec le polariseur, de fixer et moduler la polarisation injectée dans les fibres.
+\setcounter{enumi}{6}
+    \item Le cube séparateur permet, avec un polariseur, de diviser le faisceau en deux et de régler la puissance des deux faisceaux sortants. Il est essentiellement utile pour injecter le laser dans deux pointes fibrées en même temps.
+\setcounter{enumi}{8}
+    \item Le micro-positionneur manuel\footnote{Thorlabs, MBT612D/M} permet, grâce à sa précision sub-micrométrique, d'aligner avec précision une fibre optique, pour y injecter le faisceau laser focalisé dans la fibre monomode, dont le mode est d'environ 4 $\mu$ m.
+    \item Le processus de fabrication des pointes fibrées est détaillé dans la partie \ref{sec:fab_pointes}.
+    \item L'utilisation des moteurs piezoélectriques de positionnement des fibres est détaillé dans la partie \ref{sec:piezo}.
+    \item et 13) Afin de limiter les manipulations d'alignement, ainsi que pour connecter directement des instruments de mesure fibrés, des connecteurs mécaniques\footnote{Corning CamSplice} sont utilisés pour connecter l'extrémité clivée des pointes optiques à des fibres clivées et connectorisées.
+\end{enumerate}
+
+\subsection{Mesures dans l'air et dans l'eau}
+Les mesures de transmission entre les pointes peuvent être effectuées dans l'air, mais aussi dans l'eau, afin de se rapprocher des conditions expérimentales de piégeage optique.
+
+Un joint en caoutchouc, fixé sur une lame de verre et coupé en deux pour laisser passer les pointes fibrées, permet de former une cuve que l'on peut remplir de quelques gouttes d'eau. Cette cuve est recouverte d'une lamelle de verre afin de limiter l'évaporation. En effet, l'illumination par la lampe blanche d'observation au microscope est suffisamment focalisée pour chauffer le dispositif. La cuve est aussi mobile, et décorrélée du déplacement des pointes.
+
+\begin{figure}[h] \centering
+    \includegraphics[width=0.4\textwidth]{{"Images_pasmoi/fibres_dans_eau"}}
+    \caption{Cuve d'eau positionnée en-dessous des pointes fibrées}
+    \label{cuve_eau}
+\end{figure}
+
+
+
+\section{Positionnement des pointes fibrées}\label{sec:piezo}
 Le positionnement des pointes est effectué grâce à deux jeux de moteurs piezoélectriques, chacun permettant un déplacement dans les trois directions.
 \begin{description}
     \item[Les moteurs piezoélectriques inertiels\footnotemark]\footnotetext{Mechonics MS30} utilisent le mécanisme de "stick-and-slip", en jouant sur des coefficients de frottement statique et dynamique très différents entre plateau mobile et les moteurs piezo.
@@ -42,7 +81,7 @@ Cette méthode ne nous donnant que la distance relative entre les pointes, la m�
 \subsection{Dérive du positionnement}
 Malheureusement, les moteurs piezoélectriques Mechonics ne permettent pas un positionnement absolu, et ne sont pas asservis en position: une dérive peut alors apparaître.
 
-Une faible dérive est sans impact, mais nous avons observé pendant mon stage une vitesse de dérive jusqu'à 500 nm/minute, ce qui empêche toute mesure correcte. En effet, les mesures effectuées consistent généralement en balayages de quelques microns de large, qui durent quelques minutes.
+Une faible dérive est sans impact, mais une vitesse de dérive jusqu'à 500 nm/minute a pu être observée pendant mon stage, ce qui empêche toute mesure correcte. En effet, les mesures effectuées consistent généralement en balayages de quelques microns de large, qui durent quelques minutes.
 
 \begin{figure}[h] \centering
     \begin{subfigure}[b]{0.43\textwidth}
@@ -58,45 +97,61 @@ Une faible dérive est sans impact, mais nous avons observé pendant mon stage u
     \caption{Dérive des moteurs Mechonics avant et après mise à la masse}
 \end{figure}
 
-La dérive que nous avons pu mesurer suit une loi exponentielle, ce qui traduit une relâche mécanique des supports ou électrique au niveau du contrôleur des moteurs. Nous avons alors décidé de connecter les moteurs piezoélectriques à la masse, ce qui a grandement réduit la dérive, jusqu'à 23nm/minute selon l'axe Y comme on peut le voir sur la figure \ref{mechonics_apres}.
+La dérive que nous avons pu mesurer suit une loi exponentielle, ce qui traduit une relâche mécanique des supports ou électrique au niveau du contrôleur des moteurs. Il a alors été décidé de connecter les moteurs piezoélectriques à la masse, ce qui a grandement réduit la dérive, jusqu'à 23nm/minute selon l'axe Y comme on peut le voir sur la figure \ref{mechonics_apres}.
 
 Néanmoins le problème de dérive reste: même avec la mise à la masse des moteurs piezoélectriques, une dérive importante est apparue quelques fois encore lors de la suite de mon stage.
 
-\section{Chemin optique et injection Laser}
-La source de lumière utilisée pour les mesures de transmission est une diode Laser émettant à $\lambda = 808$nm, ayant une puissance maximale de 250mW\footnote{Lumics LU0808-M250}. Cette diode est directement fibrée, ce qui permet l'injection d'un mode gaussien circulaire dans les fibres.
-
-La longueur d'onde a été choisie dans l'optique de l'utilisation des pinces optiques : éloignée des bandes d'absorption de l'eau et des tissus biologiques, ainsi que du visible pour permettre le piégeage et la caractérisation de particules photo-luminescentes. Elle est aussi éloignée de la bande d'absorption de l'or qui est utilisé pour les pointes métallisées, tout en restant guidée par les fibre optiques utilisées pour fabriquer les pointes.
-
-La figure \ref{banc_optique} présente le banc optique et l'ensemble de ses éléments.
-
-
-\begin{figure}[h] \centering
-    \includegraphics[width=0.9\textwidth]{{"Images/Schemas/experience"}.pdf}
-    \caption{Schéma du banc optique expérimental}
-    \label{banc_optique}
-\end{figure}
-
-\begin{enumerate}[{1)}]
-\setcounter{enumi}{2}
-    \item Les densités optiques permettent d'adapter la puissance transmise à volonté
-    \item et 5) Les lames $\lambda/2$ permettent, avec le polariseur, de fixer et moduler la polarisation injectée dans les fibres.
-\setcounter{enumi}{6}
-    \item Le cube séparateur permet, avec un polariseur, de diviser le faisceau en deux et de régler la puissance des deux faisceaux sortants. Il est essentiellement utile pour injecter le laser dans deux pointes fibrées en même temps.
-\setcounter{enumi}{8}
-    \item Le micro-positionneur manuel\footnote{Thorlabs, MBT612D/M} permet, grâce à sa précision sub-micrométrique, d'aligner avec précision une fibre optique, pour y injecter le faisceau laser focalisé dans la fibre monomode, dont le mode est d'environ 4 $\mu$ m.
-\setcounter{enumi}{11}
-    \item et 13) Afin de limiter les manipulations d'alignement, ainsi que pour connecter directement des instruments de mesure fibrés, des connecteurs mécaniques\footnote{Corning CamSplice} sont utilisés pour connecter l'extrémité clivée des pointes optiques à des fibres clivées et connectorisées.
-\end{enumerate}
 
 \section{Les appareils de mesure et d'observation}
 \subsection{Microscope optique}
-Le processus d'alignement des pointes optiques permet nécessairement une observation directe des pointes.
+Le processus d'alignement des pointes optiques nécessite une observation directe des pointes.
 
-Ceci est permis par le microscope qui a été mis en place. Il est constitué d'un objectif de microscope corrigé à l'infini\footnote{Mitutoyo} de grossissement x50 et d'ouverture numérique NA=0,55.
+Ceci est permis par le microscope qui a été mis en place. Il est constitué d'un objectif de microscope corrigé à l'infini\footnote{Mitutoyo} de grossissement x50 et d'ouverture numérique NA=0,55. Cet objectif admet une très longue distance de travail (13mm), ce qui nous permet de manipuler les fibres sans le déplacer, mais cela implique une très faible profondeur de champ de 900nm.
+
+La caméra utilisée pour ce microscope utilise un capteur CMOS (Complementary Metal-Oxyde-Semiconductor), ce qui permet de réduire à volonté la taille de la fenêtre d'acquisition, pour augmenter la fréquence de capture.
+
+Ce microscope permet alors l'obtention d'images de $2048\times 2048$ pixels avec une résolution de 75nm/pixel, une profondeur de 16-bits et une fréquence de capture de 30 images par seconde.
+
+\subsubsection*{Observation en champs clair et sombre}
+Pour être observées au microscope optique, les pointes doivent être éclairées par une lumière blanche\footnote{Dicon LED}. 
+
+La microscopie en champ clair, la méthode d'éclairement la plus communément utilisée, consiste à éclairer directement les pointes en permettant aux rayons directs d'être transmis à la caméra.
+
+La microscope en champ sombre, à l'inverse, consiste à bloquer la lumière directe, afin de n'acquérir que les rayons diffusés ou déviés par les pointes. Celles-ci apparaîtront alors claires sur fond sombre.
+Cette méthode donne un contraste très élevé, surtout dans l'eau où on obtient en champ clair un très mauvais contraste du fait des indices très proches entre l'eau et la silice des pointes non métallisées.
+
+\begin{figure}[h] \centering
+    \includegraphics[width=0.7\textwidth]{{"Images_pasmoi/champ_clair_sombre"}}
+    \caption{Schéma de l'éclairage en sombre. \\ Inserts: Images des pointes dans l'eau en champs clair (haut) et sombre (bas)}
+    \label{banc_optique}
+\end{figure}
+
+\subsection{Mesure d'intensité}
+L'essentiel des mesures effectuées lors de mon stage repose sur des mesures en intensité lumineuse. La plupart des appareils de mesure optique offrent un connecteur standardisé FC (Fiber Channel) afin de connecter une fibre optique.
+
+Ainsi, nous relions les pointes fibrées à une fibre connectorisée grâce à un connecteur mécanique CamSplice comme décrit sur le schéma \ref{banc_optique}, puis à l'appareil de mesure.
+
+\begin{description}
+    \item[Le détecteur à photodiode]\footnote{New Focus 2001} permet d'obtenir un signal de bonne qualité, étant réglable pour adapter l'échelle de mesure aux différentes conditions de mesure. Il est alimenté par deux piles 9V afin de s'affranchir du bruit à 50Hz du réseau secteur.
+    \item[La diode à avalanche]\footnote{TODO référence} est un détecteur beaucoup plus sensible, mais aussi beaucoup plus sujet à saturer. Son très faible niveau de détection l'indique comme l'appareil de mesure approprié pour de faibles intensités lumineuses. La diode est connectée à un compteur de coups dont la durée d'intégration est réglable en fonction de l'intensité lumineuse reçue par le détecteur.
+\end{description}
+
+Ces deux instruments de mesure sont connectés par une carte d'acquisition\footnote{National Instruments DAQ BNC 2110 + TODO} connectée en PCI à un ordinateur, sur lequel un logiciel LabView permet d'acquérir et traiter les données.
+
+\subsection{Spectrométrie}
+L'étude en spectre des pointes s'effectue en utilisant comme source lumineuse non plus le laser fibré à 808nm, mais une lampe blanche \footnote{TODO référence}, sur lequel est monté un connecteur de fibres FC. Le spectre d'émission de cette lampe est tracé sur la figure \ref{spectre_blanc}.
+\begin{figure}[h] \centering
+    \includegraphics[width=0.5\textwidth]{{"Images/Spectro/Blanc"}}
+    \caption{Spectre d'émission de la lumière blanche}
+    \label{spectre_blanc}
+\end{figure}
+
+La mesure est effectuée grâce à un spectromètre\footnote{Princeton Instruments, Acton SP2150i}, couplé à une caméra EMCCD\footnote{Princeton Instruments, ProEM 16002} très sensible et rapide. Le capteur est refroidi à -70\si\degree C afin de diminuer le bruit thermique.
+
+Ce spectromètre permet d'effectuer des mesures entre 0 et 1400nm, avec une précision de $\pm 0,25nm$. L'appareil permettant d'acquérir des spectre de 220nm de large, il est nécessaire de "recoller" les spectres afin d'obtenir un spectre complet, ce qui a pour risque de faire apparaître des artefacts. Il est alors nécessaire de vérifier tout phénomène qui semble apparaître aux points de recollement.
 
 
-\section{Les appareils de mesure}
-\section{L'élaboration des pointes \& des pointes métallisées}
+\section{L'élaboration des pointes \& des pointes métallisées}\label{sec:fab_pointes}
 Les pointes fibrées sont l'élément central de la pince optique fibrée. Il est donc essentiel d'avoir un processus de fabrication permettant une qualité de pointes la meilleure possible, notamment du point de vue forme. De plus, une fabrication reproductible est essentielle, ce qui nécessite un processus correctement contrôlé.
 
 Nous profitons d'un savoir-faire déjà présent à l'Institut Néel grâce à Jean-François Motte, qui l'a développé pour la réalisation de pointes adaptées à la microscopie optique à haute résolution, telle que le SNOM (Microscope optique à balayage en champ proche) et l'iSOM (Microscope optique à balayage interférentiel).
@@ -166,9 +221,11 @@ Cette méthode permet d'obtenir une ouverture plane dont la taille peut être co
 
 On peut remarquer sur la figure \ref{fib_avant_apres} que l'ouverture de la pointe n'est pas circulaire mais très allongée (de grand et petit axes 200nm$\times$40nm). En effet le processus de gravure chimique n'a pas permis d'obtenir une pointe conique mais plutôt aplatie.
 
-\subsection{Images FIB}
+\subsection{Microscopie électronique à balayage (MEB)}
+Le microscope électronique à balayage MEB\footnote{Zeiss Ultra+} permet d'obtenir des clichés de qualité des pointes fabriquées. Il permet notamment de contrôler leur état, de mesurer l'angle de la pointe et, essentiellement, de mesurer la taille de l'ouverture des pointes métallisées.
 
-L'excentricité de l'apex d'une pointe de petit axe $a$ et grand axe $b$ est définie par 
+
+L'excentricité de l'apex d'une pointe de grand axe $a$ et petit axe $b$ est définie par 
 \[e=\frac{\sqrt{a^2-b^2}}{a}\]
 \begin{figure}[h]\centering
     \begin{subfigure}[b]{0.35\textwidth}\label{l27fm5_meb}
@@ -183,13 +240,13 @@ L'excentricité de l'apex d'une pointe de petit axe $a$ et grand axe $b$ est dé
     \label{fib_ronde_allongee}
 \end{figure}
 
-
-\section{Couplage dans la fibre multimode}
-Dummy text
-
-
-
-
+Nous avons donc vu dans cette partie les différents éléments constituant le dispositif expérimental:
+\begin{description}
+    \item[Le chemin optique,] tout d'abord, qui permet d'injecter dans les pointes fibrées un faisceau gaussien, d'intensité et de polarisation contrôlées,
+    \item[Le positionnement des pointes] qui est effectué par deux jeux de moteurs piezoélectriques qui permettent d'effectuer des scans avec des déplacement nanométriques,
+    \item[Les pointes fibrées,] ainsi que le processus d'élaboration des pointes, nues et métallisées,
+    \item[Les appareils de mesure,] qui permettent d'effectuer des mesure en intensité grâce à la photodiode et à la diode à avalanche très sensible, d'une part, et des mesures de spectroscopie d'autre part.
+\end{description}
 
 
 
