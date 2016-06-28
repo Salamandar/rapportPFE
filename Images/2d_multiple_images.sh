@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="Metal/VarDistance"
+dir="tmp"
 
 directory=`realpath $dir`
 gnuscript=`realpath 2d.gnu`

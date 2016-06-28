@@ -25,8 +25,8 @@ set decimalsign locale; set decimalsign ','
 #set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 18,2
 #set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 12,6 "2 µm"
 # Metal/VarDistance
-set arrow nohead lw 6                   lc rgb "#ffffff" front from 7,2 to 18,2
-set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 13,6 "2 µm"
+#set arrow nohead lw 6                   lc rgb "#ffffff" front from 7,2 to 18,2
+#set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 13,6 "2 µm"
 # Var_Lambda/1
 #set arrow nohead lw 6                   lc rgb "#ffffff" front from 5,2 to 13,2
 #set label font 'Ubuntu-Bold,12 ' textcolor rgb "#ffffff" front center at 10,6 "1 µm"

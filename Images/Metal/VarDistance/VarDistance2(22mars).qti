@@ -1,0 +1,1067 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	Python
+<windows>	7
+<table>
+Table1	30	3	28/06/16 15:34
+geometry	0	2	674	502	
+header	1[X]	waistX[Y]	waistY[Y]
+ColWidth	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0
+HiddenColumn	0	0	0
+Comments				
+WindowLabel		2
+<data>
+0	0.1	0.965	0.92
+1	0.2	0.846	1.049
+2	0.3	0.865	1.064
+3	0.4	0.926	1.021
+4	0.5	0.855	1.24
+5	0.6	1.008	1.038
+6	0.9	0.873	1.168
+7	1.4	0.91	1.047
+8	1.9	0.98	1.066
+9	2.4	0.974	1.109
+10	3.4	1.17	1.256
+</data>
+</table>
+<table>
+Table2	30	4	28/06/16 15:44
+geometry	9	16	453	455	
+header	1[X]	waistY[Y]	Intensite[Y]	3[Y]
+ColWidth	100	100	100	100	
+<com>
+<col nr="3">
+1/sqrt(col("Intensite", i))
+</col>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments					
+WindowLabel		2
+<data>
+0	0	1.05	0.0155	8.032193289025
+1	0.1	1.08	0.015	8.164965809277
+2	0.2	1.17	0.0145	8.304547985374
+3	0.3	1.22	0.014	8.451542547285
+4	0.4	1.2	0.0135	8.606629658239
+5	0.5	1.27	0.013	8.77058019307
+6	1	1.14	0.012	9.128709291753
+7	2	1.23	0.011	9.534625892456
+8	3	1.42	0.0098	10.10152544552
+9	4	1.4	0.0089	10.59997880006
+10	5	1.4	0.0079	11.25087900926
+11	6	1.59	0.0071	11.86781658194
+12	7	1.67	0.0067	12.21694443563
+13	8	1.83	0.006	12.90994448736
+14	9	1.97	0.0056	13.36306209562
+15	10	1.93	0.0054	13.6082763488
+</data>
+</table>
+<multiLayer>
+Graphe1	1	1	28/06/16 15:37
+geometry	578	33	849	561	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	730	400
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	831	498
+<PageGeometry>0.0059453	0.00974659	0.988109	0.97076</PageGeometry>
+PlotTitle	Titre	#000000	4228
+<Antialiasing>1</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	1
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	16	75	0	0	0
+ScaleFont0	Ubuntu	16	75	0	0	0
+ScaleFont1	Ubuntu	16	75	0	0	0
+ScaleFont2	Ubuntu	16	75	0	0	0
+ScaleFont3	Ubuntu	16	75	0	0	0
+AxisFont0	Ubuntu	16	50	0	0	0
+AxisFont1	Ubuntu	16	50	0	0	0
+AxisFont2	Ubuntu	16	50	0	0	0
+AxisFont3	Ubuntu	16	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#333333	#333333	#333333	#333333
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table1_1	Table1_waistY	0	1	#000000	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+curve	Table1_1	Table1_waistX	0	1	#ff0000	0	2	7	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	29	1
+scale	0	0.8	1.3	0	6	5	0	0
+scale	1	0.8	1.3	0	6	5	0	0
+scale	2	0	3.5	0	8	5	0	0
+scale	3	0	3.5	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.055486968449931</x>
+<y>1.0924812030075</y>
+<right>0.545123726346434</right>
+<bottom>1.25333333333333</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1,@W)
+\l(2)%(2,@W)
+</Text>
+<Font>Ubuntu	16	75	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Graphe2	1	1	28/06/16 15:50
+geometry	605	208	767	570	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	730	400
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	749	507
+<PageGeometry>0.00658762	0.00957854	0.986825	0.971264</PageGeometry>
+PlotTitle		#000000	4
+<Antialiasing>1</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	1
+EnabledAxes	1	1	1	1	
+AxesTitles		Waist [µm]		1/sqrt(Intensité) [u.a]	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	33	75	0	0	0
+ScaleFont0	Ubuntu	33	75	0	0	0
+ScaleFont1	Ubuntu	33	75	0	0	0
+ScaleFont2	Ubuntu	33	75	0	0	0
+ScaleFont3	Ubuntu	33	75	0	0	0
+AxisFont0	Ubuntu	23	25	0	0	0
+AxisFont1	Ubuntu	16	50	0	0	0
+AxisFont2	Ubuntu	25	25	0	0	0
+AxisFont3	Ubuntu	16	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#333333	#333333	#333333	#333333
+AxesBaseline	0	0	0	0	
+CanvasFrame	2	#000000
+CanvasBackground	#ffffff	0
+curve	Table2_1	Table2_waistY	2	1	#000000	0	0.4	7	1	#0000ff	#0000ff	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement1</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>0	10</Range>
+<Points>100</Points>
+<Constant>A	0.083224874472235</Constant>
+<Constant>B	1.1167371620187</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#0000ff</Color>
+	<Style>0</Style>
+	<Width>3</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+curve	Table2_1	Table2_3	2	1	#00ff00	0	0.4	7	1	#00ff00	#00ff00	0	#000000	14	1	2	1	0	29	1
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement2</Title>
+<Expression>A*x+B</Expression>
+<Variable>x</Variable>
+<Range>0.4	10</Range>
+<Points>100</Points>
+<Constant>A	0.533011307152947</Constant>
+<Constant>B	8.51363667963019</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#00ff00</Color>
+	<Style>0</Style>
+	<Width>3</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>1</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0.7	2	0	7	5	0	0
+scale	1	7	19	0	7	5	0	0
+scale	2	0	10	0	6	5	0	0
+scale	3	0	10	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<table>
+Table3	30	2	28/06/16 16:36
+geometry	0	504	445	220	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+Table4	30	5	28/06/16 16:58
+geometry	41	1	453	455	active
+header	d[X]	waistY[Y]	waistZ[Y]	Intensite[Y]	3[Y]
+ColWidth	100	100	100	100	100	
+<com>
+<col nr="4">
+1/sqrt(col("Intensite", i))
+</col>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0
+HiddenColumn	0	0	0	0	0
+Comments						
+WindowLabel		2
+<data>
+0	0	0.906	0.7		
+1	0.1	0.906	0.78		
+2	0.2	0.96	0.89		
+3	0.3	1.043	0.85		
+4	0.4	1.026	0.8		
+5	0.5	1.078	0.95		
+6	1	1.304	0.9		
+7	2	1.2	1		
+8	3	1.514	1.327		
+9	4	1.735	1.51		
+10	5	1.74	1.637		
+11	6	1.887	1.707		
+12	7	1.973	1.898		
+13	8	2.072	1.942		
+14	9	2.25	2.12		
+15	10	2.35	2.3		
+</data>
+</table>
+<multiLayer>
+Graphe3	1	1	28/06/16 17:03
+geometry	58	464	563	432	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	730	400
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	4	4	546	372
+<PageGeometry>0.00720721	0.0104167	0.983784	0.96875</PageGeometry>
+PlotTitle	Titre	#000000	4228
+<Antialiasing>1</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	1
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	12	75	0	0	0
+ScaleFont0	Ubuntu	12	75	0	0	0
+ScaleFont1	Ubuntu	12	75	0	0	0
+ScaleFont2	Ubuntu	12	75	0	0	0
+ScaleFont3	Ubuntu	12	75	0	0	0
+AxisFont0	Ubuntu	12	50	0	0	0
+AxisFont1	Ubuntu	12	50	0	0	0
+AxisFont2	Ubuntu	12	50	0	0	0
+AxisFont3	Ubuntu	12	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#333333	#333333	#333333	#333333
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Table4_d	Table4_waistZ	0	1	#000000	0	2	7	0	#000000	#000000	0	#000000	14	1	2	0	0	29	1
+curve	Table4_d	Table4_waistY	0	1	#ff0000	0	2	7	0	#ff0000	#ff0000	0	#000000	14	1	2	0	0	29	1
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement1</Title>
+<Expression>a*x+b</Expression>
+<Variable>x</Variable>
+<Range>3	10</Range>
+<Points>100</Points>
+<Constant>a	0.130559523757215</Constant>
+<Constant>b	0.956488095821409</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>Non-linéaireAjustement2</Title>
+<Expression>a*x+b</Expression>
+<Variable>x</Variable>
+<Range>3	10</Range>
+<Points>100</Points>
+<Constant>a	0.11320238091539</Constant>
+<Constant>b	1.2043095242306</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	0.5	2.5	0	5	5	0	0
+scale	1	0.5	2.5	0	5	5	0	0
+scale	2	-2	12	0	8	5	0	0
+scale	3	-2	12	0	8	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	3	3	3	3
+MinorTicks	3	3	3	3
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	0	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>7.1856540084388</x>
+<y>1.1482993197279</y>
+<right>10.5822784810127</right>
+<bottom>0.881632653061225</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1,@W)
+\l(2)%(2,@W)
+\l(3)%(3)
+\l(4)%(4)
+</Text>
+<Font>Ubuntu	12	75	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[28/06/16 15:53	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 8,3224874472235e-02 +/- 5,3068469273843e-03
+B = 1,1167371620187e+00 +/- 2,6050551553670e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5,2392162066822e-03
+R^2 = 0,9461418874317
+Coefficient R^2 ajusté = 0,9378560239597
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,07238243023471
+RSS (Restes de la somme des carrés) = 0,07334902689355
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:01	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: 1/(A*sqrt(x+B))
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+A = 1,1252839725322e-04 +/- 9,6783174739487e+01
+B = 3,7887035949569e+07 +/- 6,5171602609728e+13
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,1119796771563e-01
+R^2 = -4,590819753236e-07
+Coefficient R^2 ajusté = -0,4000006427148
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,3334635927888
+RSS (Restes de la somme des carrés) = 0,6671878062938
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 1000
+État = the iteration has not converged yet
+---------------------------------------------------------------------------------------
+[28/06/16 16:01	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/(sqrt(x)+B)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 2,2442421974875e+10 +/- 1,9057690966340e+18
+B = 1,5909559219172e+10 +/- 1,3510104378526e+18
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9,7278125057357e-02
+R^2 = -5,896201304978e-10
+Coefficient R^2 ajusté = -0,1538461545265
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,3118944133154
+RSS (Restes de la somme des carrés) = 1,361893750803
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 64
+État = cannot reach the specified tolerance in gradient
+---------------------------------------------------------------------------------------
+[28/06/16 16:03	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/(sqrt(x)+B)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 2,2442421974875e+10 +/- 1,9057690966340e+18
+B = 1,5909559219172e+10 +/- 1,3510104378526e+18
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9,7278125057357e-02
+R^2 = -5,896201304978e-10
+Coefficient R^2 ajusté = -0,1538461545265
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,3118944133154
+RSS (Restes de la somme des carrés) = 1,361893750803
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 64
+État = cannot reach the specified tolerance in gradient
+---------------------------------------------------------------------------------------
+[28/06/16 16:03	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/(sqrt(C*x)+B)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 1,0000000000000e+00 +/- 2,9270929515315e+08
+B = 1,0000000000000e+00 +/- 2,9270929527255e+08
+C = 1,0000000000000e+00 +/- 5,8541859079705e+08
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,3772392147219e+00
+R^2 = -12,14648062037
+Coefficient R^2 ajusté = -15,43310077547
+RMSE (La racine carrée moyenne des carrés des erreurs) = 1,173558355908
+RSS (Restes de la somme des carrés) = 17,90410979138
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 1
+État = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[28/06/16 16:03	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/((C*x)^2+B)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 1,3542756096169e+00 +/- 1,0248381627613e+08
+B = 9,6208645562506e-01 +/- 7,2805188846413e+07
+C = -2,9225137900162e-05 +/- 1,0953564936825e+03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,0477201931676e-01
+R^2 = -0,0001046345340372
+Coefficient R^2 ajusté = -0,2501307931675
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,3236850619302
+RSS (Restes de la somme des carrés) = 1,362036251118
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 39
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:04	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/sqrt((x)+B)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 2,7666045598685e+04 +/- 1,7240982465848e+11
+B = 3,8465323268780e+08 +/- 4,7941796958268e+15
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9,7278129063699e-02
+R^2 = -4,177402779248e-08
+Coefficient R^2 ajusté = -0,153846202047
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,311894419738
+RSS (Restes de la somme des carrés) = 1,361893806892
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 1000
+État = the iteration has not converged yet
+---------------------------------------------------------------------------------------
+[28/06/16 16:04	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/sqrt((x)+B)+C
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 1,0000000000000e+00 +/- 2,8438444377045e+00
+B = 1,0000000000000e+00 +/- 4,2691447673142e+00
+C = 1,0000000000000e+00 +/- 1,0407033836524e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,8685021307703e-01
+R^2 = -2,692690982686
+Coefficient R^2 ajusté = -3,615863728357
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,6219728395011
+RSS (Restes de la somme des carrés) = 5,029052770001
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 1
+État = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[28/06/16 16:04	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/sqrt((x)+B)+C
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 1,0000000000000e+00 +/- 2,8438444377045e+00
+B = 1,0000000000000e+00 +/- 4,2691447673142e+00
+C = 1,0000000000000e+00 +/- 1,0407033836524e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,8685021307703e-01
+R^2 = -2,692690982686
+Coefficient R^2 ajusté = -3,615863728357
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,6219728395011
+RSS (Restes de la somme des carrés) = 5,029052770001
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 1
+État = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[28/06/16 16:05	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/sqrt((x)+B)+C
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 3,9000000000000e+00 +/- 1,1111157721921e+01
+B = 2,6000000000000e+00 +/- 8,8064326505131e+00
+C = -3,0000000000000e-01 +/- 3,1261369768080e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7,1227129098853e-01
+R^2 = -5,799008206661
+Coefficient R^2 ajusté = -7,498760258327
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,8439616644069
+RSS (Restes de la somme des carrés) = 9,259526782851
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 1
+État = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[28/06/16 16:05	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/sqrt((x)+B)+C
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 3,9000000000000e+00 +/- 1,1111157721921e+01
+B = 2,6000000000000e+00 +/- 8,8064326505131e+00
+C = -3,0000000000000e-01 +/- 3,1261369768080e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 7,1227129098853e-01
+R^2 = -5,799008206661
+Coefficient R^2 ajusté = -7,498760258327
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,8439616644069
+RSS (Restes de la somme des carrés) = 9,259526782851
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 1
+État = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[28/06/16 16:05	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_3, utilisant la fonction: A/sqrt((x)+B)+C
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 2,9775706201774e-02 +/- 4,6094526618915e-03
+B = 2,7607693455960e+00 +/- 5,0077148525134e-01
+C = -2,9011020112383e-03 +/- 1,2743789683549e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,0572523560892e-07
+R^2 = 0,993025132972
+Coefficient R^2 ajusté = 0,991281416215
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,0003251541720614
+RSS (Restes de la somme des carrés) = 1,374428062916e-06
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 6
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:05	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/sqrt((x)+B)+C
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = -2,2634801501099e+00 +/- 1,2514655423943e+03
+B = 5,9374160507844e+01 +/- 2,3426978906769e+04
+C = 1,6498780459648e+00 +/- 1,0454752714759e+02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,0220040602349e-01
+R^2 = 0,02444278174761
+Coefficient R^2 ajusté = -0,2194465228155
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,3196879822944
+RSS (Restes de la somme des carrés) = 1,328605278305
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 10
+État = singularity or extremely bad function behavior detected
+---------------------------------------------------------------------------------------
+[28/06/16 16:05	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A/((x)^2+B)+C
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = -1,6573893795610e+02 +/- 1,3833170181907e+02
+B = 1,0106787760573e+02 +/- 5,3676528238089e+01
+C = 2,8056316733462e+00 +/- 5,1266905224402e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5,3248793589550e-03
+R^2 = 0,9491711951344
+Coefficient R^2 ajusté = 0,936463993918
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,07297177097313
+RSS (Restes de la somme des carrés) = 0,06922343166642
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 22
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:07	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_3, utilisant la fonction: A+B/sqrt(x)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+A = 6,3804910341692e-03 +/- 6,8601224712622e-04
+B = 3,5886524554515e-03 +/- 5,2346200967640e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2,8161829472302e-06
+R^2 = 0,783331225899
+Coefficient R^2 ajusté = 0,7472197635489
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,001678148666606
+RSS (Restes de la somme des carrés) = 3,661037831399e-05
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:07	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_3, utilisant la fonction: A+B/sqrt(x+C)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+A = -2,9010843877863e-03 +/- 1,2743758232206e-03
+B = 2,9775641105639e-02 +/- 4,6094377660263e-03
+C = 2,7607621932489e+00 +/- 5,0076997692289e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,0572523562726e-07
+R^2 = 0,9930251329708
+Coefficient R^2 ajusté = 0,9912814162135
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,0003251541720896
+RSS (Restes de la somme des carrés) = 1,374428063154e-06
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 9
+État = success
+---------------------------------------------------------------------------------------
+
+[28/06/16 16:26	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: 1/(a*x+b)^2
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+a = -2,1533442188747e-02 +/- 1,7651983098699e-03
+b = 9,2641116974947e-01 +/- 1,2332776357585e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4,3787054182206e-03
+R^2 = 0,9606224149743
+Coefficient R^2 ajusté = 0,944871380964
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,06617178717717
+RSS (Restes de la somme des carrés) = 0,02627223250932
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 9
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:27	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: 1/(a*x+b)^2
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+a = -2,1533411609048e-02 +/- 1,7651981768493e-03
+b = 9,2641099737473e-01 +/- 1,2332771494957e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4,3787054184009e-03
+R^2 = 0,9606224149727
+Coefficient R^2 ajusté = 0,9448713809618
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,06617178717853
+RSS (Restes de la somme des carrés) = 0,02627223251041
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 21
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:28	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+a = 8,6538934238459e+04 +/- 4,0885776557773e+13
+b = 4,1529556996340e+04 +/- 1,3262547338907e+13
+c = 1,4437499998778e+00 +/- 1,4298974988140e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,3343750008835e-01
+R^2 = -6,62124355344e-10
+Coefficient R^2 ajusté = -0,7500000011587
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,365290980026
+RSS (Restes de la somme des carrés) = 0,6671875004418
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 40
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:30	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+a = 1,9539457103478e+05 +/- 4,0180842527309e+29
+b = 4,5524171414316e+04 +/- 9,3615679959665e+28
+c = 1,4437499999170e+00 +/- 1,3630812550662e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,3343750004634e-01
+R^2 = -3,47262441025e-10
+Coefficient R^2 ajusté = -0,7500000006077
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,3652909799685
+RSS (Restes de la somme des carrés) = 0,6671875002317
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 48
+État = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[28/06/16 16:30	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+c = 7,7048433770596e-01 +/- 1,4506746522234e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,3671311117557e-01
+R^2 = -2,708583483575
+Coefficient R^2 ajusté = -2,97348230383
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,5802698606472
+RSS (Restes de la somme des carrés) = 5,050696667634
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+a = 0,104 (Constante)
+b = 1 (Constante)
+---------------------------------------------------------------------------------------
+[28/06/16 16:31	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Intensite, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+c = -6,2977191308291e-01 +/- 7,1677912277576e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8,2203569896163e-02
+R^2 = -6 256,427922838
+Coefficient R^2 ajusté = -6 703,387060184
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,2867116493904
+RSS (Restes de la somme des carrés) = 1,233053548442
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+a = 0,104 (Constante)
+b = 1 (Constante)
+---------------------------------------------------------------------------------------
+[28/06/16 16:31	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+c = 7,7048433769178e-01 +/- 1,4506746520225e-01
+--------------------------------------------------------------------------------------
+Chi^2/doF = 3,3671311117557e-01
+R^2 = -2,708583483575
+Coefficient R^2 ajusté = -2,97348230383
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,5802698606472
+RSS (Restes de la somme des carrés) = 5,050696667634
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+a = 0,104 (Constante)
+b = 1 (Constante)
+---------------------------------------------------------------------------------------
+[28/06/16 16:31	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Intensite, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+c = -6,2977191310931e-01 +/- 7,1677912283214e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8,2203569896163e-02
+R^2 = -6 256,427922838
+Coefficient R^2 ajusté = -6 703,387060184
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,2867116493904
+RSS (Restes de la somme des carrés) = 1,233053548442
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+a = 0,104 (Constante)
+b = 1 (Constante)
+---------------------------------------------------------------------------------------
+[28/06/16 16:31	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Intensite, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+a = 8,8001622391052e-01 +/- 2,3649506264573e-01
+b = 8,9195608994360e+00 +/- 3,9391063161598e-01
+c = 2,1877709991045e-03 +/- 1,2101729664624e-03
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,3671171000180e-07
+R^2 = 0,9930077889729
+Coefficient R^2 ajusté = 0,9877636307026
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,0003697454665061
+RSS (Restes de la somme des carrés) = 6,83558550009e-07
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 315
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:32	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+a = 2,1533436568793e-02 +/- 1,7651982810217e-03
+b = -9,2641113844995e-01 +/- 1,2332775455244e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 4,3787054182202e-03
+R^2 = 0,9606224149743
+Coefficient R^2 ajusté = 0,944871380964
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,06617178717717
+RSS (Restes de la somme des carrés) = 0,02627223250932
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 13
+État = success
+---------------------------------------------------------------------------------------
+c = 0 (Constante)
+---------------------------------------------------------------------------------------
+[28/06/16 16:32	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Intensite, utilisant la fonction: 1/(a*x+b)^2+c
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e-01 à x  = 1,0000000000000e+01
+a = -5,7928701885895e-01 +/- 3,0692814802025e-02
+b = -8,2860050269949e+00 +/- 7,0349912107271e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,5838659956022e-07
+R^2 = 0,9902790548551
+Coefficient R^2 ajusté = 0,9863906767972
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,0003979781395507
+RSS (Restes de la somme des carrés) = 9,503195973613e-07
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 12
+État = success
+---------------------------------------------------------------------------------------
+c = 0 (Constante)
+---------------------------------------------------------------------------------------
+[28/06/16 16:33	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Intensite, utilisant la fonction: 1/(a*x+b)
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 2,0000000000000e-01 à x  = 9,0000000000000e+00
+a = 1,1832408890750e+01 +/- 5,6925848368535e-01
+b = 6,8495717482560e+01 +/- 1,0433637996522e+00
+--------------------------------------------------------------------------------------
+Chi^2/doF = 8,7255862430406e-08
+R^2 = 0,9938724815709
+Coefficient R^2 ajusté = 0,9908087223563
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,0002953910330907
+RSS (Restes de la somme des carrés) = 4,36279312152e-07
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 11
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:34	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_Intensite, utilisant la fonction: 1/(a*x+b)^2
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 2,0000000000000e-01 à x  = 9,0000000000000e+00
+a = 5,7337256041217e-01 +/- 3,1177848017214e-02
+b = 8,3493137342977e+00 +/- 7,3546275418176e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,3209817936490e-07
+R^2 = 0,9907234424603
+Coefficient R^2 ajusté = 0,9860851636905
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,000363453132281
+RSS (Restes de la somme des carrés) = 6,604908968245e-07
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 9
+État = success
+---------------------------------------------------------------------------------------
+
+[28/06/16 16:37	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_3, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 1,0000000000000e+00 à x  = 1,0000000000000e+01
+A = 5,2500052500732e-01 +/- 1,2910919735684e-02
+B = 8,5706733512960e+00 +/- 8,0110150415835e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,3752077506224e-02
+R^2 = 0,9951850838058
+Coefficient R^2 ajusté = 0,9938093934646
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,1172692521773
+RSS (Restes de la somme des carrés) = 0,1100166200498
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:37	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_2, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 4,0000000000000e-01 à x  = 1,0000000000000e+01
+A = 8,3130570432848e-02 +/- 6,8927495858180e-03
+B = 1,1169167593983e+00 +/- 3,9062799763766e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 5,9391851264241e-03
+R^2 = 0,9356737925745
+Coefficient R^2 ajusté = 0,9213790798133
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,07706610880552
+RSS (Restes de la somme des carrés) = 0,05939185126424
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 16:38	Graphe: ''Graphe2'']
+Ajustement non-linéaire de données: Table2_3, utilisant la fonction: A*x+B
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 4,0000000000000e-01 à x  = 1,0000000000000e+01
+A = 5,3301130715295e-01 +/- 1,0257780970271e-02
+B = 8,5136366796302e+00 +/- 5,8133207793995e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,3153723327200e-02
+R^2 = 0,9963099820468
+Coefficient R^2 ajusté = 0,9954899780572
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,1146896827409
+RSS (Restes de la somme des carrés) = 0,131537233272
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 17:10	Graphe: ''Graphe3'']
+Ajustement non-linéaire de données: Table4_4, utilisant la fonction: a*x+b
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 0,0000000000000e+00 à x  = 1,0000000000000e+01
+a = 8,9112126470659e-02 +/- 9,1719757242377e-03
+b = 1,2718853034068e+00 +/- 4,5023915247282e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,5650167534802e-02
+R^2 = 0,8708424486031
+Coefficient R^2 ajusté = 0,8509720560804
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,1251006296339
+RSS (Restes de la somme des carrés) = 0,2191023454872
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 17:10	Graphe: ''Graphe3'']
+Ajustement non-linéaire de données: Table4_4, utilisant la fonction: a*x+b
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 3,0000000000000e+00 à x  = 1,0000000000000e+01
+a = 1,3055952375721e-01 +/- 6,0032154699932e-03
+b = 9,5648809582141e-01 +/- 4,1374307391642e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,5136210317460e-03
+R^2 = 0,9874735653461
+Coefficient R^2 ajusté = 0,9824629914845
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,03890528282568
+RSS (Restes de la somme des carrés) = 0,009081726190476
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = success
+---------------------------------------------------------------------------------------
+[28/06/16 17:10	Graphe: ''Graphe3'']
+Ajustement non-linéaire de données: Table4_2, utilisant la fonction: a*x+b
+Méthode de pondération: Aucun poids
+Levenberg-Marquardt Normalisé algorithme avec une tolérence de 0,0001
+De x  = 3,0000000000000e+00 à x  = 1,0000000000000e+01
+a = 1,1320238091539e-01 +/- 6,5471897421630e-03
+b = 1,2043095242306e+00 +/- 4,5123391388533e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 1,8003591269841e-03
+R^2 = 0,9803247637689
+Coefficient R^2 ajusté = 0,9724546692765
+RMSE (La racine carrée moyenne des carrés des erreurs) = 0,04243063901221
+RSS (Restes de la somme des carrés) = 0,0108021547619
+---------------------------------------------------------------------------------------
+Nombre d'itérations = 2
+État = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+</log>

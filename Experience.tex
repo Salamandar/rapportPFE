@@ -1,8 +1,8 @@
 Dans cette partie, nous allons détailler le dispositif expérimental qui a été mis en place afin de caractériser au mieux les pointes fibrées.
 
-Nous verrons d'abord l'ensemble de ce qui compose l'expérience, comme l'injection du laser, les appareils utilisés pour le positionnement des pointes, ainsi que les instruments de mesures que nous avons utilisés.
+Nous détaillerons d'abord l'ensemble de ce qui compose l'expérience, comme l'injection du laser, les appareils utilisés pour le positionnement des pointes, ainsi que les instruments de mesures que nous avons utilisé.
 
-Enfin, nous aborderons le processus d'élaboration des pointes fibrées et des pointes métallisées.
+Enfin, nous verrons le processus d'élaboration des pointes fibrées et des pointes métallisées.
 
 \section{Positionnement des pointes fibrées}
 Le positionnement des pointes est effectué grâce à deux jeux de moteurs piezoélectriques, chacun permettant un déplacement dans les trois directions.
@@ -60,41 +60,20 @@ Une faible dérive est sans impact, mais nous avons observé pendant mon stage u
 
 La dérive que nous avons pu mesurer suit une loi exponentielle, ce qui traduit une relâche mécanique des supports ou électrique au niveau du contrôleur des moteurs. Nous avons alors décidé de connecter les moteurs piezoélectriques à la masse, ce qui a grandement réduit la dérive, jusqu'à 23nm/minute selon l'axe Y comme on peut le voir sur la figure \ref{mechonics_apres}.
 
-Néanmoins le problème de dérive reste: même avec la mise à la masse des moteurs piezoélectriques, une dérive importante est apparue quelques fois encore lors de la suite de mon stage.
+Néanmoins le problème de dérive reste: même avec la mise à la masse des moteurs piezoélectriques, une dérive importante est apparue quelques fois encore lors de mon stage.
 
 \section{Chemin optique et injection Laser}
 La source de lumière utilisée pour les mesures de transmission est une diode Laser émettant à $\lambda = 808$nm, ayant une puissance maximale de 250mW\footnote{Lumics LU0808-M250}. Cette diode est directement fibrée, ce qui permet l'injection d'un mode gaussien circulaire dans les fibres.
 
 La longueur d'onde a été choisie dans l'optique de l'utilisation des pinces optiques : éloignée des bandes d'absorption de l'eau et des tissus biologiques, ainsi que du visible pour permettre le piégeage et la caractérisation de particules photo-luminescentes. Elle est aussi éloignée de la bande d'absorption de l'or qui est utilisé pour les pointes métallisées, tout en restant guidée par les fibre optiques utilisées pour fabriquer les pointes.
 
-La figure \ref{banc_optique} présente le banc optique et l'ensemble de ses éléments.
-
-
 \begin{figure}[h] \centering
     \includegraphics[width=0.9\textwidth]{{"Images/Schemas/experience"}.pdf}
-    \caption{Schéma du banc optique expérimental}
-    \label{banc_optique}
+    \caption{Schéma de mesure de la distance par interférence (a), et franges pour différentes distances fibre-miroir (b)}
 \end{figure}
 
-\begin{enumerate}[{1)}]
-\setcounter{enumi}{2}
-    \item Les densités optiques permettent d'adapter la puissance transmise à volonté
-    \item et 5) Les lames $\lambda/2$ permettent, avec le polariseur, de fixer et moduler la polarisation injectée dans les fibres.
-\setcounter{enumi}{6}
-    \item Le cube séparateur permet, avec un polariseur, de diviser le faisceau en deux et de régler la puissance des deux faisceaux sortants. Il est essentiellement utile pour injecter le laser dans deux pointes fibrées en même temps.
-\setcounter{enumi}{8}
-    \item Le micro-positionneur manuel\footnote{Thorlabs, MBT612D/M} permet, grâce à sa précision sub-micrométrique, d'aligner avec précision une fibre optique, pour y injecter le faisceau laser focalisé dans la fibre monomode, dont le mode est d'environ 4 $\mu$ m.
-\setcounter{enumi}{11}
-    \item et 13) Afin de limiter les manipulations d'alignement, ainsi que pour connecter directement des instruments de mesure fibrés, des connecteurs mécaniques\footnote{Corning CamSplice} sont utilisés pour connecter l'extrémité clivée des pointes optiques à des fibres clivées et connectorisées.
-\end{enumerate}
 
-\section{Les appareils de mesure et d'observation}
-\subsection{Microscope optique}
-Le processus d'alignement des pointes optiques permet nécessairement une observation directe des pointes.
-
-Ceci est permis par le microscope qui a été mis en place. Il est constitué d'un objectif de microscope corrigé à l'infini\footnote{Mitutoyo} de grossissement x50 et d'ouverture numérique NA=0,55.
-
-
+\section{Les appareils de mesure}
 \section{L'élaboration des pointes \& des pointes métallisées}
 
 \subsection{Images FIB}
