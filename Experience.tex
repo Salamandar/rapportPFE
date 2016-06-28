@@ -97,8 +97,77 @@ Ceci est permis par le microscope qui a été mis en place. Il est constitué d'
 
 \section{Les appareils de mesure}
 \section{L'élaboration des pointes \& des pointes métallisées}
+Les pointes fibrées sont l'élément central de la pince optique fibrée. Il est donc essentiel d'avoir un processus de fabrication permettant une qualité de pointes la meilleure possible, notamment du point de vue forme. De plus, une fabrication reproductible est essentielle, ce qui nécessite un processus correctement contrôlé.
+
+Nous profitons d'un savoir-faire déjà présent à l'Institut Néel grâce à Jean-François Motte, qui l'a développé pour la réalisation de pointes adaptées à la microscopie optique à haute résolution, telle que le SNOM (Microscope optique à balayage en champ proche) et l'iSOM (Microscope optique à balayage interférentiel).
+
+La proximité de la fabrication des pointes nous permet d'adapter le processus en fonction de nos besoins, notamment pour la fabrication de pointes métallisées comme nous allons le voir.
+
+\subsection{Fabrication des pointes fibrées}
+La fibre optique utilisée pour la fabrication des pointes est une fibre monomode entre 630nm et 800nm à saut d'indice\footnote{Nufern S630-HP}. Le cœur de la fibre est en silice pure, a un indice de 1.46 et un diamètre de $3,5\mu m$. La lumière est guidée dans ce cœur par la gaine optique d'indice de réfraction légèrement plus faible, tandis qu'une gaine plastique mécanique protège la fibre et la rend flexible.
+
+Différents processus existent pour la réalisation de fibres optiques effilées, notamment des processus d'étirage et de polissage mécaniques, mais aussi de gravure chimique. 
+
+Cette dernière méthode, qui est maîtrisée à l'Institut Néel, permet d'obtenir des pointes d'angle assez grand et constant; en outre, elle ne modifie pas les caractéristiques du cœur de la fibre, contrairement aux processus d'étirage mécanique. Néanmoins, la forme de la fibre n'est pas toujours conique mais souvent aplatie, ce qui peut parfois poser problème pour la fabrication de pointes métalliques comme nous pourrons le voir.
+
+La fibre optique est immergée dans une solution d'acide fluorhydrique (HF à 40\%). Cet acide dissout très facilement la silice, mais n'attaque pas la gaine plastique qui l'entoure. Ainsi, un ménisque concave se forme sur les parois de la gaine. Ce ménisque remonte au fur et à mesure que la pointe devient conique, jusqu'à obtenir une pointe effilée comme on peut le voir sur la figure \ref{gravure_chimique}.
+
+Ce processus permet d'obtenir une pointe dont l'extrémité se trouve sur l'axe de la fibre et a un diamètre d'environ 60nm; L'angle du cône ainsi formé est constant, d'environ 15\si{\degree}.
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.45\textwidth}\label{l33fm2_meb_avant}
+        \includegraphics[width=\textwidth]{{"Images_pasmoi/gravure"}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.50\textwidth}\label{l33fm2_meb}
+        \includegraphics[width=\textwidth]{{"Images_pasmoi/gravure_2"}}
+    \end{subfigure}
+    \caption{Processus de gravure chimique des pointes fibrées}
+    \label{gravure_chimique}
+\end{figure}
+
+La manipulation d'acide fluorhydrique nécessite de nombreuses précautions, en raison de sa forte toxicité. C'est pourquoi le bain d'acide est recouvert d'une couche d'huile de silicone, afin d'empêcher des vapeurs d'acide fluorhydrique de se former.
+
+\subsection{Fabrication des pointes métallisées}
+Les pointes que nous avons ainsi obtenues peuvent être utilisées directement, ou être métallisées afin d'obtenir une pointe d'ouverture très petite. Pour cela nous recouvrons intégralement la pointe de métal, puis nous ouvrons son extrémité grâce à un faisceau d'ions focalisé.
+
+
+\subsubsection*{Métallisation des pointes}
+Les pointes sont métallisées par évaporation thermique. Elles sont d'abord recouvertes d'une fine couche d'accroche de Titane (Ti) de quelques nanomètres, sur lequel on dépose la couche d'or (Au) dont l'épaisseur peut varier entre 40nm et 150nm.
+
+La chambre d'évaporation est placée sous un vide de l'ordre de $10^{-7}$mbar; le métal à déposer est chauffé dans un creuset par effet Joule et se recondense sur les pointes placées au-dessus (fig. \ref{metallisation}).
+
+Afin d'obtenir une couche uniforme de métal, les pointes sont tournées à vitesse constante. L'épaisseur déposée peut être finement contrôlée à l'aide d'une balance à quartz.
+\begin{figure}[h]\centering
+    \includegraphics[width=0.6\textwidth]{{"Images_pasmoi/metallisation_2"}}
+    \caption{Dépôt de métal sur les pointes par évaporation thermique}
+    \label{metallisation}
+\end{figure}
+
+Il faut néanmoins faire attention à ne pas déposer une épaisseur trop faible d'or. En effet, l'épaisseur de la couche déposée est variable et peut localement s'approcher de l'épaisseur de peau de l'or, qui est d'environ $14nm$ dans l'infrarouge proche. Au-deçà de $50nm$, on peut obtenir une pointe partiellement transparente à la lumière, et donc inutilisable.
+
+\subsubsection*{Découpe de l'extrémité des pointes}
+L'extrémité des pointes métallisées est alors complètement recouverte d'or. Nous utilisons alors le FIB (Faisceau d'ions focalisé) afin d'ouvrir cette extrémité (fig. \ref{fib_avant_apres}).
+
+Les pointes sont placées dans un MEB sous ultra-vide, à 90\si\degree du faisceau d'ions. L'utilisation en parallèle du MEB et du FIB permet de contrôler en temps réel la découpe de la pointe, on peut donc obtenir une ouverture de la taille précise voulue.
+
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.25\textwidth}\label{l33fm2_meb_avant}
+        \includegraphics[width=\textwidth]{{"Images/Photos_Fibres/l33fm2_avant_crop"}}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.25\textwidth}\label{l33fm2_meb}
+        \includegraphics[width=\textwidth]{{"Images/Photos_Fibres/l33fm2_apres_crop"}}
+    \end{subfigure}
+    \caption{Pointe métallisée avant et après découpe au FIB}
+    \label{fib_avant_apres}
+\end{figure}
+
+Cette méthode permet d'obtenir une ouverture plane dont la taille peut être contrôlée avec une précision nanométrique.
+
+On peut remarquer sur la figure \ref{fib_avant_apres} que l'ouverture de la pointe n'est pas circulaire mais très allongée (de grand et petit axes 200nm$\times$40nm). En effet le processus de gravure chimique n'a pas permis d'obtenir une pointe conique mais plutôt aplatie.
 
 \subsection{Images FIB}
+
 L'excentricité de l'apex d'une pointe de petit axe $a$ et grand axe $b$ est définie par 
 \[e=\frac{\sqrt{a^2-b^2}}{a}\]
 \begin{figure}[h]\centering
@@ -115,16 +184,14 @@ L'excentricité de l'apex d'une pointe de petit axe $a$ et grand axe $b$ est dé
 \end{figure}
 
 
-\begin{figure}[h]\centering
-    \begin{subfigure}[b]{0.25\textwidth}\label{l33fm2_meb_avant}
-        \includegraphics[width=\textwidth]{{"Images/Photos_Fibres/l33fm2_avant_crop"}.jpg}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.25\textwidth}\label{l33fm2_meb}
-        \includegraphics[width=\textwidth]{{"Images/Photos_Fibres/l33fm2_apres_crop"}.jpg}
-    \end{subfigure}
-    \caption{Pointe métallisée avant et après découpe au FIB}
-    \label{fib_avant_apres}
-\end{figure}
-
 \section{Couplage dans la fibre multimode}
 Dummy text
+
+
+
+
+
+
+
+
+
