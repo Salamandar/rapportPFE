@@ -6,7 +6,198 @@ Ensuite, nous allons mesurer l'évolution de la transmission des pointes en fonc
 
 Enfin, nous allons étudier le spectre de transmission d'une telle pince, afin de mettre en valeur la transmission des différents éléments de la pince optique.
 
-\section{Influence de la polarisation incidente sur l'émission}
+\section{Mesure du profil d'émission}
+La mesure du profil spatial d'émission des pointes est permise, comme nous l'avions vu dans la première partie, par les platines piezoélectriques\footnote{Physik Instrumente PI P620}, grâce à leur déplacement sub-nanométrique et leur positionnement absolu. 
+
+On utilise alors une pointe dont l'ouverture numérique est déjà connue, que l'on aligne devant la pointe dont on veut mesurer l'émission, et on la déplace tout en mesurant l'intensité reçue.
+
+\begin{figure}[h]\centering
+    \includegraphics[width=0.7\textwidth]{{"Images/Schemas/FibresScan"}}
+    \caption{Schéma de scan des profils d'émission}
+    \label{schema_fibre_scan}
+\end{figure}
+
+Il est à noter que le profil en transmission mesuré correspond à la convolution entre la pointe émettrice et la pointe réceptrice. La taille du spot mesurée doit alors être corrigée, et la largeur du faisceau, aussi appelée waist, est donnée par:
+\[w = \sqrt{\tilde{w}^2 - w_0^2}
+\] 
+où $\tilde{w}$ est le waist mesuré et $w_0$ l'ouverture optique de la fibre de mesure.
+
+Le waist de deux fibres identique est obtenu à partir de $w_{min}$, le waist minimal, mesuré avec les pointes au plus proche : $w_0 = w_{min}/\sqrt{2}$.
+
+\section{Variation de la distance}
+Une caractéristique importante des pointes est l'évolution du spot d'émission en fonction de la distance. En effet, cela détermine directement les performance du piégeage optique en fonction de la distance entre les pointes qui forment la pince optique.
+
+Pour cela, nous mesurons les profils d'émission des pointes, en éloignant la pointe de mesure de la pointe émettrice. Nous obtenons alors des spots gaussiens, dont la largeur évolue en fonction de la distance.
+
+Dans un premier temps, nous avons caractérisé les pointes dans l'air, puis dans l'eau afin de se rapprocher des conditions expérimentales des pinces optiques.
+
+\subsection{Pointes sans métal}
+On peut facilement reconnaître des fibres de bonne et mauvaise qualité: une pointe correcte présente un spot d'émission gaussien, quelle que soit la distance de mesure. La figure \ref{fibre_ok_scan} présente des exemples de scans caractéristiques.
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Vrac/Nue_OK_1"}.png}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Vrac/Nue_Pasok"}.png}
+        \caption{}
+    \end{subfigure}
+    \caption{Exemples de profils de transmission caractéristiques pour une bonne (a) et une mauvaise (b) pointes}
+    \label{fibre_ok_scan}
+\end{figure}
+
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.22\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/VarDistanceNues/Spot_small"}}
+        \caption{}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[b]{0.40\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/VarDistanceNues/DistanceNues"}}
+        \caption{}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}[b]{0.22\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/VarDistanceNues/Spot_big"}}
+        \caption{}
+    \end{subfigure}
+    \caption{Profils d'émission dans l'air (a,c) et évolution du waist avec la distance (b)}
+    \label{nues_distance}
+\end{figure}
+
+La largeur des spots évolue linéairement avec la distance dans l'air et dans l'eau, avec une largeur au contact autour de $nm$ dans les deux milieux.
+On obtient l'angle d'émission de la pointe à partir de la pente du waist: $\theta_{\text{émission}} = \arctan(\text{pente}) $, et l'ouverture numérique de la pointe est définie par:
+\[
+    N.A = n\sin(\frac{\theta}{2})
+\]
+où $\theta$ est l'angle total du cône d'émission.
+
+Dans l'air, la pente du waist est de $0.33$, on trouve un angle d'émission de $18.3\si{\degree}$, qui donne une ouverture numérique de 0,16.
+
+Dans l'eau, le saut d'indice entre la fibre (n=1,45) et l'eau (1,33) beaucoup étant moins important qu'avec l'air (n=1), le faisceau diverge beaucoup moins: on obtient un angle d'émission de $7.8\si{\degree}$ et une ouverture numérique de 0,09.
+
+Enfin, l'amplitude de l'intensité lumineuse transmise évolue selon $\dfrac{1}{\sqrt{\text{distance}}}$: en effet le flux total transmis entre les deux pointes reste constant tandis que la surface de transmission évolue quadratiquement.
+
+Il est à noter que cette intensité est trois fois plus importante dans l'eau que dans l'air: cela implique un facteur $\sqrt{3}$ en puissance, comme cela avait déjà été constaté \cite{Decombe}.
+
+
+\subsection{Pointes métalliques}
+Nous avons alors fait la même étude pour des pointes métalliques. Ici nous avons pris une pointe la plus circulaire possible, pour limiter l'impact de la polarisation incidente sur l'émission que nous verrons dans la partie suivante (\ref{sec:polarisation}).
+
+La figure \ref{emission_metal_distance} présente les scans effectués dans l'air à très faible distance ($d=50nm$) et à distance plus élevée ($d=1\mu m$) ainsi que la courbe d'évolution de la largeur du spot. 
+
+On remarque tout d'abord que le spot, à faible distance, est de forme elliptique : on retrouve la forme de l'apex de la pointe métallique utilisée. En s'éloignant de la pointe, le spot devient progressivement circulaire.
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[c]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/VarDistanceNues/Metal_50nm"}.png}
+        \caption*{$d = 50nm$}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.5\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Metal/VarDistance/VarDistance"}.png}
+        \caption*{Évolution du waist avec la distance}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/VarDistanceNues/Metal_1um"}.png}
+        \caption*{$d = 1\mu m$}
+    \end{subfigure}
+    \caption{Émission d'une pointe métallique en fonction de la distance entre les pointes}
+    \label{emission_metal_distance}
+\end{figure}
+
+Enfin, nous avons à faible distance une évolution quadratique, puis une évolution linéaire au-delà de 800nm.
+
+
+\subsection{Pointes de Bessel}
+Enfin, nous avons étudié l'évolution de l'émission d'une pointe de Bessel en fonction de la distance.
+
+Compte tenu de la structure du faisceau de Bessel (ref chapitre 1), nous attendons une divergence très lente du spot avec la distance. C'est pourquoi, contrairement aux pointes métalliques pour lequelles nous n'avons pas dépassé quelques microns de distance de mesure, nous sommes allés jusqu'à $220\mu m$ pour les pointes de Bessel.
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=4.9"}.png}
+        \caption*{d=5$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=62"}.png}
+        \caption*{d=60$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=101"}.png}
+        \caption*{d=100$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=150"}.png}
+        \caption*{d=150$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.136\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=197"}.png}
+        \caption*{d=200$\mu$m}
+    \end{subfigure}\\
+    \includegraphics[width=0.5\textwidth]{{"Images/Bessel/VarDistance/waist2"}.png}
+    TODO épurer la figure
+    \caption{Variation de l'émission d'une pointe de Bessel en fonction de la distance}
+    \label{var_distance_bessel}
+\end{figure}
+
+On constate en effet sur la figure \ref{var_distance_bessel} que le spot évolue linéairement très peu sur $200\mu m$. On obtient un angle d'ouverture autour de $0.47\si{\degree}$. Cela promet un piégeage très efficace sur de grandes distances.
+
+Paradoxalement, l'intensité transmise dans le spot n'est pas constante : elle évolue selon $\dfrac{1}{\sqrt{\text{distance}}}$ comme pour des pointes classiques.TODO explication
+
+En effet, pour obtenir une intensité constante, il faudrait que les plans d'onde formant le faisceau de Bessel soient infinis, ce qui est en pratique impossible.
+
+
+\subsubsection*{Franges d'émission des pointes de Bessel}
+Une autre façon d'étudier est d'observer les franges du faisceau de Bessel. Or l'amplitude de ces franges est extrêmement faible face à celle du spot central. Pour cela, nous imposons alors à notre mesure d'être saturée au niveau du spot, pour observer facilement les franges. La figure \ref{franges_bessel} présente de telles mesures, et nous pouvons voir le déplacement des franges
+
+Un outil numérique nous permet enfin de mesurer le rayon des franges. La figure \ref{franges_bessel_courbe} présente l'évolution du rayon d'une des franges observables.
+
+
+\begin{figure}[h]\centering
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=5"}.png}
+        \caption*{5$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=14"}.png}
+        \caption*{14$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=20"}.png}
+        \caption*{20$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=35"}.png}
+        \caption*{30$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=40"}.png}
+        \caption*{40$\mu$m}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.156\textwidth}
+        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=50"}.png}
+        \caption*{50$\mu$m}
+    \end{subfigure}
+    \caption{Franges de Bessel en fonction de la distance}
+    \label{franges_bessel}
+\end{figure}
+
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{{"Images/Bessel/Franges/Franges"}.png}
+        \caption{Rayon des franges de Bessel en fonction de la distance}
+        \label{franges_bessel_courbe}
+    \end{center}
+\end{figure}
+
+La frange se déplace alors selon un angle de $8.5\mu m$, ce qui est beaucoup plus grand que l'angle de divergence du spot central.
+
+
+
+
+\section{Influence de la polarisation incidente sur l'émission}\label{sec:polarisation}
 Il avait été vu dans de précédentes études que la transmission des pointes métallisées dépendait fortement de la polarisation de la lumière incidente \cite{Decombe}. Notamment, cette dépendance doit se retrouver exclusivement pour des apex elliptiques.
 Les modélisations qui avaient été effectuées peuvent être retrouvées dans la figure \ref{theorie_polar_metal}.
 \begin{figure}[h]\centering
@@ -149,162 +340,6 @@ Nous avons alors utilisé une fibre non métallisée pour étudier l'émission, 
 \end{figure}
 
 
-\section{Variation de la distance}
-Une caractéristique importante des pointes est l'évolution du spot d'émission en fonction de la distance. En effet, cela détermine directement les performance du piégeage optique en fonction de la distance entre les pointes qui forment la pince optique.
-
-Pour cela, nous mesurons les profils d'émission des pointes, en éloignant la pointe de mesure de la pointe émettrice. Nous obtenons alors des spots gaussiens, dont la largeur évolue en fonction de la distance.
-
-Dans un premier temps, nous avons caractérisé les pointes dans l'air, puis dans l'eau afin de se rapprocher des conditions expérimentales des pinces optiques.
-
-\subsection{Pointes sans métal}
-On peut facilement reconnaître des fibres de bonne et mauvaise qualité: une pointe correcte présente un spot d'émission gaussien, quelle que soit la distance de mesure. La figure \ref{fibre_ok_scan} présente des exemples de scans caractéristiques.
-
-\begin{figure}[h]\centering
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Vrac/Nue_OK_1"}.png}
-        \caption{}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Vrac/Nue_Pasok"}.png}
-        \caption{}
-    \end{subfigure}
-    \caption{Exemples de profils de transmission caractéristiques pour une bonne (a) et une mauvaise (b) pointes}
-    \label{fibre_ok_scan}
-\end{figure}
-
-
-\begin{figure}[h]\centering
-TODO inclure les scans + une courbe d'évolution dans l'air et dans l'eau
-    \caption{Profils d'émission dans l'air (-) et dans l'eau (-) et évolution du waist avec la distance ()}
-    \label{nues_distance}
-\end{figure}
-
-La largeur des spots évolue linéairement avec la distance dans l'air et dans l'eau, avec une largeur au contact autour de $nm$ dans les deux milieux.
-On obtient l'angle d'émission de la pointe à partir de la pente du waist: $\theta_{\text{émission}} = \arctan(\text{pente}) $, et l'ouverture numérique de la pointe est définie par:
-\[
-    N.A = n\sin(\frac{\theta}{2})
-\]
-où $\theta$ est l'angle total du cône d'émission.
-
-Dans l'air, on trouve un angle d'émission de $18\si{\degree}$, qui donne une ouverture numérique de 0,16.
-
-Dans l'eau, le saut d'indice entre la fibre (n=1,45) et l'eau (1,33) beaucoup étant moins important qu'avec l'air (n=1), le faisceau diverge beaucoup moins: on obtient un angle d'émission de $8\si{\degree}$ et une ouverture numérique de 0,09.
-
-Enfin, l'amplitude de l'intensité lumineuse transmise évolue selon $\dfrac{1}{\sqrt{\text{distance}}}$: en effet le flux total transmis entre les deux pointes reste constant tandis que la surface de transmission évolue quadratiquement.
-
-Cette intensité est trois fois plus importante dans l'eau que dans l'air: cela implique un facteur $\sqrt{3}$ en puissance.
-
-
-\subsection{Pointes métalliques}
-Nous avons alors fait la même étude pour des pointes métalliques. Ici nous avons pris une pointe la plus circulaire possible, pour limiter l'impact de la polarisation incidente sur l'émission.
-
-La figure \ref{emission_metal_distance} présente les scans effectués dans l'air à très faible distance ($d=50nm$) et à distance plus élevée ($d=1\mu m$) ainsi que la courbe d'évolution de la largeur du spot. 
-
-On remarque tout d'abord que le spot, à faible distance, est de forme elliptique : on retrouve la forme de l'apex de la pointe métallique utilisée. En s'éloignant de la pointe, le spot devient progressivement circulaire.
-
-\begin{figure}[h]\centering
-    \begin{subfigure}[c]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/VarDistance/26"}.png}
-        \caption*{$d = 50nm$}
-    \end{subfigure}
-    \begin{subfigure}[c]{0.5\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/VarDistance/VarDistance"}.png}
-        \caption*{Évolution du waist avec la distance}
-    \end{subfigure}
-    \begin{subfigure}[c]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Metal/VarDistance/25"}.png}
-        \caption*{$d = 1\mu m$}
-    \end{subfigure}
-    \caption{Émission d'une pointe métallique en fonction de la distance entre les pointes}
-    \label{emission_metal_distance}
-\end{figure}
-
-Enfin, nous avons à faible distance une évolution quadratique, puis une évolution linéaire au-delà de 800nm.
-
-
-\subsection{Pointes de Bessel}
-Enfin, nous avons étudié l'évolution de l'émission d'une pointe de Bessel en fonction de la distance.
-
-Compte tenu de la structure du faisceau de Bessel (ref chapitre 1), nous attendons une divergence très lente du spot avec la distance. C'est pourquoi, contrairement aux pointes métalliques pour lequelles nous n'avons pas dépassé quelques microns de distance de mesure, nous sommes allés jusqu'à $220\mu m$ pour les pointes de Bessel.
-
-\begin{figure}[h]\centering
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=4.9"}.png}
-        \caption*{d=5$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=62"}.png}
-        \caption*{d=60$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=101"}.png}
-        \caption*{d=100$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=150"}.png}
-        \caption*{d=150$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.136\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/VarDistance/fS2_d=197"}.png}
-        \caption*{d=200$\mu$m}
-    \end{subfigure}\\
-    \includegraphics[width=0.5\textwidth]{{"Images/Bessel/VarDistance/waist2"}.png}
-    TODO épurer la figure
-    \caption{Variation de l'émission d'une pointe de Bessel en fonction de la distance}
-    \label{var_distance_bessel}
-\end{figure}
-
-On constate en effet sur la figure \ref{var_distance_bessel} que le spot évolue linéairement très peu sur $200\mu m$. On obtient un angle d'ouverture autour de $0.47\si{\degree}$. Cela promet un piégeage très efficace sur de grandes distances.
-
-Paradoxalement, l'intensité transmise dans le spot n'est pas constante : elle évolue selon $\dfrac{1}{\sqrt{\text{distance}}}$ comme pour des pointes classiques.TODO explication
-
-En effet, pour obtenir une intensité constante, il faudrait que les plans d'onde formant le faisceau de Bessel soient infinis, ce qui est en pratique impossible.
-
-
-\subsubsection*{Franges d'émission des pointes de Bessel}
-Une autre façon d'étudier est d'observer les franges du faisceau de Bessel. Or l'amplitude de ces franges est extrêmement faible face à celle du spot central. Pour cela, nous imposons alors à notre mesure d'être saturée au niveau du spot, pour observer facilement les franges. La figure \ref{franges_bessel} présente de telles mesures, et nous pouvons voir le déplacement des franges
-
-Un outil numérique nous permet enfin de mesurer le rayon des franges. La figure \ref{franges_bessel_courbe} présente l'évolution du rayon d'une des franges observables.
-
-
-\begin{figure}[h]\centering
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=5"}.png}
-        \caption*{5$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=14"}.png}
-        \caption*{14$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=20"}.png}
-        \caption*{20$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=35"}.png}
-        \caption*{30$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=40"}.png}
-        \caption*{40$\mu$m}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.156\textwidth}
-        \includegraphics[width=\textwidth]{{"Images/Bessel/Franges/d=50"}.png}
-        \caption*{50$\mu$m}
-    \end{subfigure}
-    \caption{Franges de Bessel en fonction de la distance}
-    \label{franges_bessel}
-\end{figure}
-
-\begin{figure}[h]
-    \begin{center}
-        \includegraphics[width=0.7\textwidth]{{"Images/Bessel/Franges/Franges"}.png}
-        \caption{Rayon des franges de Bessel en fonction de la distance}
-        \label{franges_bessel_courbe}
-    \end{center}
-\end{figure}
-
-La frange se déplace alors selon un angle de $8.5\mu m$, ce qui est beaucoup plus grand que l'angle de divergence du spot central.
 
 \newpage
 \section{Transmission en spectre}

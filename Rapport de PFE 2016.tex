@@ -3,10 +3,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[francais]{babel}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
-\usepackage[colorlinks,linkcolor={blue!30!black},
-                       citecolor={blue!50!black},
-                        urlcolor={blue!80!black},
-                        ]{hyperref}
 \usepackage{titling} % Récupérer titre et auteur
 \usepackage{enumerate} % Styles personnalisés d'énumération
 \usepackage{amsmath,siunitx,array,url} % Symboles, etc
@@ -16,14 +12,16 @@
 \usepackage[top=2cm,left=2.5cm,right=2.5cm,bottom=2cm]{geometry} % Géométrie de la page, modifier selon le besoin
 \setlength{\parskip}{0.4em} % Taille des interlignes entre paragraphes
 \usepackage[babel=true,kerning=true]{microtype}
-
+\usepackage[colorlinks,linkcolor={blue!30!black},
+                       citecolor={blue!50!black},
+                        urlcolor={blue!80!black},
+                        ]{hyperref}
 \addto{\captionsfrench}{\renewcommand{\abstractname}{Introduction}}
 \pdfsuppresswarningpagegroup=1
 \date{}
 \title{Rapport de Projet de Fin d'Études : Caractérisation de pointes fibrées pour nano-pinces optiques et plasmoniques}
 \author{Félix Piédallu}
-\hypersetup{pdftex,
-            pdfauthor=\theauthor,
+\hypersetup{pdfauthor=\theauthor,
             pdftitle=\thetitle}
 
 \begin{document}
@@ -43,7 +41,7 @@ De telles pinces optiques utilisent comme source de faisceau des fibres gravées
 \begin{figure}[h] \centering
     \includegraphics[width=0.75\textwidth]{{"Images/Schemas/FaisceauConfinement"}}
     \caption{Schéma de principe du piégeage optique dans le cas de faisceaux\\ focalisé (gauche) et confiné (droite)}
-    \label{cuve_eau}
+    \label{schema_piegeage}
 \end{figure}
 
 \section*{Contexte du stage}
